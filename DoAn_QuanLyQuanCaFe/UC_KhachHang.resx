@@ -135,15 +135,6 @@
   <metadata name="maTheLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="hieuLucTuLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="hieuLucDenLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="trangThaiLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -310,22 +301,22 @@
   <data name="theKhachHangBindingNavigatorSaveItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANxSURBVDhPlVRdaBxVGB1SxDffalUsbY2ijQpiWqhVmwq+
-        +CKKFHzQl4DBiBYMtHlIa/fFH7BI1Vas0eIGH2KWWqtQkViJUdJAN223SR6S7mazmZ2dyabZ3dDt7s7M
-        zj1+52Y20RKjfnB2h++ec+abe7/vGreG6aluy8OAE8K+BY08OXOeOhDK/jlsL4hafpAya0Hd9IA5wg0h
-        z8xZtaBKDrmh7N8j4wZH02IyU/s7mMvUgr6Mh9acYCH8T5dxlxYmb6g7szUMzcsbkzfrM2dznnX4vLN4
-        9Lec+uKChZOCz0Pw+YdkAT+ZZSRuKF21fDrmfUA8SgCajLmaetGRhLwF7SNlPHq2iI2df+CNk3FMTk6u
-        YHx8HLFYDGNjY4jFk9h9roRf8nVtKtq47atndIXTSt1u+4iYXnCq7Vyx/sjpIja9PYbO3stIJBIriMfj
-        iEQiGB4eRv/oFMh74scSzoup7GvcdlV7rqK2aNNGPB67nm/pX8TdB6/i9S+vaJMGRkZG0NXVhcHBQXzz
-        +wTII57/eQmZ5SohhzSrjawaHpIW2Lnr28Xy9r7rYngF+45dxOjo6ApoGI1GMTQ0hI8HJ0Aesfd0AbNi
-        mOVeusGvhuOpHrZCWk7w6f4CHvxqAfefyGLre1N4uTeBN/suLSN6Gfv7J9D53TRav3Y0j9h+Km9mqrgv
-        XcVWOZQNhu0HH9KQLfFk3yIe+Cz/v9B8PJ/Wn9kIcb3N9NVzMy72tXwyn2/+yIG5VJf0+mGW6iB3d++C
-        LkYG4aKkm0Lb5dj2rpXe9r6tBcViEbZtrwmuMcjd8anjp2pBSqZoILRZjc0RM70lYmmy67qoVCprgmsM
-        cqkJ5ath3lT3ysY+29xjOpu7TU3+LxWS23LEKklzf5ATWD5e4B42OW5Q4LG3Hsnhnv1zmuw4DlKp1Jrg
-        GoNcanTLyLTJPi7pCm1PvWW5gfNYdxabXptFxVVasF6QQy411Ob8oHfWVa+ywg3sIenyM3t6stj4ygye
-        EtJLsuHrgRxy2w5ZnJAzMsJ36OqSctNwdFj2Bfl55/siumMFHBxYxYEQf82RQy411KarQfmaqx42pqpB
-        hn1EUzY4Z5L7IReGvppIZp7gM3NcI4dc5qmlx7Uq9hqTckNMV1V7sooOuTQ1hNQh5A656tcE18hp8Kmd
-        rqg2wzCMPwEdI5aYadKP9QAAAABJRU5ErkJggg==
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANvSURBVDhPlVRdaBRXFB4ixTff1CqKP1G0aYXSIPj/A774
+        IkoR+mBfAgZTWsFAzENE90FUUMRWLNVUcYMP0cX6U7BIalnSEgNu1DUJaNyf7M7MzmRjdje43dn52ft5
+        zs1sYiWNeuDbvZz7fd+cuXPOVd4N1RGtuoMbpg/jHVTzzEk7osWX/X8YTiWouV48bXme6gBphu2D1pzT
+        Lc9iDnN92fsjZVfOJMkkUf4vOJcqVzpSDuozhFH/P1nEp1IYey3maWWER+iJsaKbuJNx9CMPzLHTYV1c
+        eqjjIuEXH7y+G8vhD7WI6Gshq6ZXx4gLaBYKAGqUdFnsMSlBT0FDTxFr7uQxt+kffHcxgsHBwUn09/cj
+        FAqhr68PoUgMG+4V8GfWk6akjRiu2C4rHBJituEioDqVK1vu5bwvbuYx/1AfmtqfIBqNTiISiSAQCKC7
+        uxudvS/AvPW/F/CATOlcI4YtGjIlsUSaVuOr0KtsXecYFhx+hgO/PpUmVfT09KC5uRldXV249vcAmMfY
+        dX8cqYkqYTjesDTSy1hNLbB23fWx4mcdr8jwKfaee4Te3t5JsGEwGEQ4HMaPXQNgHmPbzRyGyVDjs7Qr
+        fymmI9q4FZL0BTd35rDq8ihWXNCw9MQLfNMexfcdjycQfIKDnQNo+m0I9VdNyWOsvjKipiwsT1pYSh9l
+        lmK4ldNsyC2xsWMMK3/OfhRqz2eT8jWrQa6fqK7YmbCxt+6nkWztWRPquEfpmUMteGDuhvZRWYxqeY8o
+        XePbTsSy41py2UlDCvL5PAzDmBa8x8Hc+vOGGy/TZNEo+jZTsSigJpcEdEm2bRulUmla8B4Hc1njy6dC
+        /VcsooPdUdummotbVUn+kAqZW3dML1Bzn8oQdBe7+QxrzLKX489efyyDhQfTkmyaJuLx+LTgPQ7mska2
+        DE0bneO4rNBwxA+a7ZlftmqYv38YJVtIwUzBHOayhrUZt9I+bItvucJZ3EN0Fd3a0qZh7r4ENhHpazrw
+        mcAc5m49otOEVG7RCM+R1cXopuHR4bIf0s/R23m0hnI4fGMKLT7ezjGHuaxhbaLkFV/a4nPlueWluI/Y
+        lBucZ5LPgy4MeTUxmfMMXnOO95jDXM6zlj1eWtimDNINMWSJhpiFRro0JYjUSORGuuqnBe8xp8pn7VBJ
+        bFUURXkDfqCWa+XF+xQAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="khachHangTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

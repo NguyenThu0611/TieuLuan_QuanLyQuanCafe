@@ -45,6 +45,7 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.flChucNang = new System.Windows.Forms.FlowLayoutPanel();
             this.pContent = new DevComponents.DotNetBar.PanelEx();
+            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.panelEx1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigationBar1)).BeginInit();
@@ -80,8 +81,8 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.03798F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.96202F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 711);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
@@ -99,14 +100,15 @@
             this.navPhieuQuaTang,
             this.navDanhMuc,
             this.navNhanVien,
+            this.buttonItem1,
             this.navNhapHang,
             this.buttonItem7,
             this.buttonItem4,
             this.buttonItem5,
             this.buttonItem6});
-            this.navigationBar1.Location = new System.Drawing.Point(3, 309);
+            this.navigationBar1.Location = new System.Drawing.Point(3, 239);
             this.navigationBar1.Name = "navigationBar1";
-            this.navigationBar1.Size = new System.Drawing.Size(194, 377);
+            this.navigationBar1.Size = new System.Drawing.Size(194, 412);
             this.navigationBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.navigationBar1.TabIndex = 0;
             this.navigationBar1.Text = "Khách Hàng";
@@ -114,7 +116,6 @@
             // navBanHang
             // 
             this.navBanHang.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.navBanHang.Checked = true;
             this.navBanHang.Image = ((System.Drawing.Image)(resources.GetObject("navBanHang.Image")));
             this.navBanHang.Name = "navBanHang";
             this.navBanHang.OptionGroup = "navBar";
@@ -124,6 +125,7 @@
             // navKhachHang
             // 
             this.navKhachHang.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navKhachHang.Checked = true;
             this.navKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("navKhachHang.Image")));
             this.navKhachHang.Name = "navKhachHang";
             this.navKhachHang.OptionGroup = "navBar";
@@ -207,7 +209,7 @@
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(194, 300);
+            this.groupPanel1.Size = new System.Drawing.Size(194, 230);
             // 
             // 
             // 
@@ -246,7 +248,7 @@
             this.flChucNang.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flChucNang.Location = new System.Drawing.Point(0, 0);
             this.flChucNang.Name = "flChucNang";
-            this.flChucNang.Size = new System.Drawing.Size(188, 276);
+            this.flChucNang.Size = new System.Drawing.Size(188, 206);
             this.flChucNang.TabIndex = 0;
             // 
             // pContent
@@ -266,6 +268,15 @@
             this.pContent.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.pContent.Style.GradientAngle = 90;
             this.pContent.TabIndex = 5;
+            // 
+            // buttonItem1
+            // 
+            this.buttonItem1.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem1.Checked = true;
+            this.buttonItem1.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem1.Image")));
+            this.buttonItem1.Name = "buttonItem1";
+            this.buttonItem1.OptionGroup = "navBar";
+            this.buttonItem1.Text = "Khu Vực";
             // 
             // frmMain
             // 
@@ -305,5 +316,6 @@
         private DevComponents.DotNetBar.ButtonItem navNhanVien;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private System.Windows.Forms.FlowLayoutPanel flChucNang;
+        private DevComponents.DotNetBar.ButtonItem buttonItem1;
     }
 }

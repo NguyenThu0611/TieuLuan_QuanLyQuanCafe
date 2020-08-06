@@ -56,6 +56,7 @@
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -68,40 +69,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DanhMucMatHang_DongChai.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DanhMucMatHang_DongChai.Designer.cs">
-      <DependentUpon>DanhMucMatHang_DongChai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DanhMucMatHang_NguyenLieu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DanhMucMatHang_NguyenLieu.Designer.cs">
-      <DependentUpon>DanhMucMatHang_NguyenLieu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DanhMucMatHang_PhaChe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DanhMucMatHang_PhaChe.Designer.cs">
-      <DependentUpon>DanhMucMatHang_PhaChe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DialogThanhToan.cs">
+    <Compile Include="Dialog_BaoCaoNhanVien_ThoiGian.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DialogThanhToan.Designer.cs">
-      <DependentUpon>DialogThanhToan.cs</DependentUpon>
+    <Compile Include="Dialog_BaoCaoNhanVien_ThoiGian.Designer.cs">
+      <DependentUpon>Dialog_BaoCaoNhanVien_ThoiGian.cs</DependentUpon>
     </Compile>
     <Compile Include="DoAn_QuanLyQuanCafeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAn_QuanLyQuanCafeDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DanhMucMatHang_BoiThuong.cs">
+    <Compile Include="UC_DanhMucMatHang_DongChai.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DanhMucMatHang_BoiThuong.Designer.cs">
-      <DependentUpon>DanhMucMatHang_BoiThuong.cs</DependentUpon>
+    <Compile Include="UC_DanhMucMatHang_DongChai.Designer.cs">
+      <DependentUpon>UC_DanhMucMatHang_DongChai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DanhMucMatHang_NguyenLieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DanhMucMatHang_NguyenLieu.Designer.cs">
+      <DependentUpon>UC_DanhMucMatHang_NguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DanhMucMatHang_PhaChe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DanhMucMatHang_PhaChe.Designer.cs">
+      <DependentUpon>UC_DanhMucMatHang_PhaChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_ThanhToan.Designer.cs">
+      <DependentUpon>Dialog_ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DanhMucMatHang_BoiThuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DanhMucMatHang_BoiThuong.Designer.cs">
+      <DependentUpon>UC_DanhMucMatHang_BoiThuong.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -109,11 +116,11 @@
     <Compile Include="frmLogin.designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhauHaoPhaChe.cs">
+    <Compile Include="frmKhauHaoPhaChe%28Edit%29.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhauHaoPhaChe.Designer.cs">
-      <DependentUpon>KhauHaoPhaChe.cs</DependentUpon>
+    <Compile Include="frmKhauHaoPhaChe%28Edit%29.Designer.cs">
+      <DependentUpon>frmKhauHaoPhaChe%28Edit%29.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_GiamGia.cs">
       <SubType>UserControl</SubType>
@@ -153,32 +160,53 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_NhanVien_BaoCao.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NhanVien_BaoCao.Designer.cs">
+      <DependentUpon>UC_NhanVien_BaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NhanVien_ChamCong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NhanVien_ChamCong.Designer.cs">
+      <DependentUpon>UC_NhanVien_ChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_NhapHang%28Edit%29.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_NhapHang%28Edit%29.Designer.cs">
+      <DependentUpon>UC_NhapHang%28Edit%29.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_ThemKhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_ThemKhachHang.Designer.cs">
       <DependentUpon>UC_ThemKhachHang.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DanhMucMatHang_DongChai.resx">
-      <DependentUpon>DanhMucMatHang_DongChai.cs</DependentUpon>
+    <EmbeddedResource Include="Dialog_BaoCaoNhanVien_ThoiGian.resx">
+      <DependentUpon>Dialog_BaoCaoNhanVien_ThoiGian.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DanhMucMatHang_NguyenLieu.resx">
-      <DependentUpon>DanhMucMatHang_NguyenLieu.cs</DependentUpon>
+    <EmbeddedResource Include="UC_DanhMucMatHang_DongChai.resx">
+      <DependentUpon>UC_DanhMucMatHang_DongChai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DanhMucMatHang_PhaChe.resx">
-      <DependentUpon>DanhMucMatHang_PhaChe.cs</DependentUpon>
+    <EmbeddedResource Include="UC_DanhMucMatHang_NguyenLieu.resx">
+      <DependentUpon>UC_DanhMucMatHang_NguyenLieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DialogThanhToan.resx">
-      <DependentUpon>DialogThanhToan.cs</DependentUpon>
+    <EmbeddedResource Include="UC_DanhMucMatHang_PhaChe.resx">
+      <DependentUpon>UC_DanhMucMatHang_PhaChe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DanhMucMatHang_BoiThuong.resx">
-      <DependentUpon>DanhMucMatHang_BoiThuong.cs</DependentUpon>
+    <EmbeddedResource Include="Dialog_ThanhToan.resx">
+      <DependentUpon>Dialog_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DanhMucMatHang_BoiThuong.resx">
+      <DependentUpon>UC_DanhMucMatHang_BoiThuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhauHaoPhaChe.resx">
-      <DependentUpon>KhauHaoPhaChe.cs</DependentUpon>
+    <EmbeddedResource Include="frmKhauHaoPhaChe%28Edit%29.resx">
+      <DependentUpon>frmKhauHaoPhaChe%28Edit%29.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_GiamGia.resx">
       <DependentUpon>UC_GiamGia.cs</DependentUpon>
@@ -207,6 +235,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NhanVien_BaoCao.resx">
+      <DependentUpon>UC_NhanVien_BaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NhanVien_ChamCong.resx">
+      <DependentUpon>UC_NhanVien_ChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_NhapHang%28Edit%29.resx">
+      <DependentUpon>UC_NhapHang%28Edit%29.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_ThemKhachHang.resx">
       <DependentUpon>UC_ThemKhachHang.cs</DependentUpon>

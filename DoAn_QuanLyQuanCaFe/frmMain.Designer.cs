@@ -114,6 +114,7 @@
             // navBanHang
             // 
             this.navBanHang.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navBanHang.Checked = true;
             this.navBanHang.Image = ((System.Drawing.Image)(resources.GetObject("navBanHang.Image")));
             this.navBanHang.Name = "navBanHang";
             this.navBanHang.OptionGroup = "navBar";
@@ -159,7 +160,6 @@
             // navNhapHang
             // 
             this.navNhapHang.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.navNhapHang.Checked = true;
             this.navNhapHang.Image = ((System.Drawing.Image)(resources.GetObject("navNhapHang.Image")));
             this.navNhapHang.Name = "navNhapHang";
             this.navNhapHang.OptionGroup = "navBar";

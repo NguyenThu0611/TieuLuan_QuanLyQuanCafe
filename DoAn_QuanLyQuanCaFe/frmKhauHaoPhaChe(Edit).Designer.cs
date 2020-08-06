@@ -1,6 +1,6 @@
 ﻿namespace DoAn_QuanLyQuanCaFe
 {
-    partial class KhauHaoPhaChe
+    partial class frmKhauHaoPhaChe
     {
         /// <summary>
         /// Required designer variable.

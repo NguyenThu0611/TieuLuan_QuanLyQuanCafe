@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace DoAn_QuanLyQuanCaFe
 {
-    public partial class KhauHaoPhaChe : DevExpress.XtraEditors.XtraForm
+    public partial class UC_NhapHang : DevExpress.XtraEditors.XtraUserControl
     {
-        public KhauHaoPhaChe()
+        public UC_NhapHang()
         {
             InitializeComponent();
         }

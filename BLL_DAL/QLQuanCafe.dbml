@@ -20,22 +20,13 @@
       <Association Name="TheKhachHang_KhachHang" Member="KhachHangs" ThisKey="MaThe" OtherKey="MaThe" Type="KhachHang" />
     </Type>
   </Table>
-  <Table Name="dbo.CaLamViec" Member="CaLamViecs">
-    <Type Name="CaLamViec">
-      <Column Name="MaCaLam" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TenCaLam" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="MaLoaiCa" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Association Name="CaLamViec_ChiTietCaLam" Member="ChiTietCaLams" ThisKey="MaCaLam" OtherKey="MaCaLam" Type="ChiTietCaLam" />
-      <Association Name="LoaiCa_CaLamViec" Member="LoaiCa" ThisKey="MaLoaiCa" OtherKey="MaLoaiCa" Type="LoaiCa" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.ChiTietCaLam" Member="ChiTietCaLams">
     <Type Name="ChiTietCaLam">
-      <Column Name="MaCTCaLam" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MaNV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MaCaLam" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ThoiGianLam_Ca" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="CaLamViec_ChiTietCaLam" Member="CaLamViec" ThisKey="MaCaLam" OtherKey="MaCaLam" Type="CaLamViec" IsForeignKey="true" />
+      <Column Name="MaNV" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaLoaiCa" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoThoiGianLam" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="NgayLam" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="LoaiCa_ChiTietCaLam" Member="LoaiCa" ThisKey="MaLoaiCa" OtherKey="MaLoaiCa" Type="LoaiCa" IsForeignKey="true" />
       <Association Name="NhanVien_ChiTietCaLam" Member="NhanVien" ThisKey="MaNV" OtherKey="MaNV" Type="NhanVien" IsForeignKey="true" />
     </Type>
   </Table>
@@ -119,13 +110,14 @@
   </Table>
   <Table Name="dbo.ChiTietHoaDon_PhaChe" Member="ChiTietHoaDon_PhaChes">
     <Type Name="ChiTietHoaDon_PhaChe">
-      <Column Name="MaCTHD_PC" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MaCTHD_PC" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaHD" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="MaMH_PC" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="DonGia" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="ThanhTien" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="ChiTietHoaDon_PhaChe_KhauHaoNguyenLieu" Member="KhauHaoNguyenLieus" ThisKey="MaCTHD_PC" OtherKey="MaMH_PC" Type="KhauHaoNguyenLieu" />
       <Association Name="HoaDon_ChiTietHoaDon_PhaChe" Member="HoaDon" ThisKey="MaHD" OtherKey="MaHD" Type="HoaDon" IsForeignKey="true" />
       <Association Name="MatHang_PC_ChiTietHoaDon_PhaChe" Member="MatHang_PC" ThisKey="MaMH_PC" OtherKey="MaMH_PC" Type="MatHang_PC" IsForeignKey="true" />
     </Type>
@@ -179,8 +171,8 @@
       <Column Name="MaMH_NL" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="MaMH_PC" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="SoLuongTieuHao" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="ChiTietHoaDon_PhaChe_KhauHaoNguyenLieu" Member="ChiTietHoaDon_PhaChe" ThisKey="MaMH_PC" OtherKey="MaCTHD_PC" Type="ChiTietHoaDon_PhaChe" IsForeignKey="true" />
       <Association Name="MatHang_NguyenLieu_KhauHaoNguyenLieu" Member="MatHang_NguyenLieu" ThisKey="MaMH_NL" OtherKey="MaMH_NL" Type="MatHang_NguyenLieu" IsForeignKey="true" />
-      <Association Name="MatHang_PC_KhauHaoNguyenLieu" Member="MatHang_PC" ThisKey="MaMH_PC" OtherKey="MaMH_PC" Type="MatHang_PC" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.KhuVuc" Member="KhuVucs">
@@ -194,7 +186,7 @@
     <Type Name="LoaiCa">
       <Column Name="MaLoaiCa" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TenLoaiCa" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
-      <Association Name="LoaiCa_CaLamViec" Member="CaLamViecs" ThisKey="MaLoaiCa" OtherKey="MaLoaiCa" Type="CaLamViec" />
+      <Association Name="LoaiCa_ChiTietCaLam" Member="ChiTietCaLams" ThisKey="MaLoaiCa" OtherKey="MaLoaiCa" Type="ChiTietCaLam" />
     </Type>
   </Table>
   <Table Name="dbo.MatHang_BoiThuong" Member="MatHang_BoiThuongs">
@@ -233,7 +225,6 @@
       <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="DonGia" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Association Name="MatHang_PC_ChiTietHoaDon_PhaChe" Member="ChiTietHoaDon_PhaChes" ThisKey="MaMH_PC" OtherKey="MaMH_PC" Type="ChiTietHoaDon_PhaChe" />
-      <Association Name="MatHang_PC_KhauHaoNguyenLieu" Member="KhauHaoNguyenLieus" ThisKey="MaMH_PC" OtherKey="MaMH_PC" Type="KhauHaoNguyenLieu" />
     </Type>
   </Table>
   <Table Name="dbo.NhaCungCap" Member="NhaCungCaps">
@@ -276,4 +267,20 @@
       <Association Name="PhieuGiaoHang_ChiTietGiaoHang_MHNguyenLieu" Member="ChiTietGiaoHang_MHNguyenLieus" ThisKey="MaPhieuGiao" OtherKey="MaPhieuGiao" Type="ChiTietGiaoHang_MHNguyenLieu" />
     </Type>
   </Table>
+  <Function Name="dbo.getNhanVien_byDate" Method="getNhanVien_byDate">
+    <Parameter Name="checkin" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="checkout" Type="System.DateTime" DbType="Date" />
+    <ElementType Name="getNhanVien_byDateResult">
+      <Column Name="MaNV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TenNV" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ThoiGianLam" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.getNhanVien" Method="getNhanVien">
+    <ElementType Name="getNhanVienResult">
+      <Column Name="MaNV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TenNV" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="" Member="Column1" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

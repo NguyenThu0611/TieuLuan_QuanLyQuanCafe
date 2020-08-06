@@ -62,6 +62,16 @@ namespace DoAn_QuanLyQuanCaFe
                 pContent.Controls.Clear();
                 pContent.Controls.Add(new UC_DanhMucMatHang_BoiThuong() { Dock = DockStyle.Fill });
             }
+            else if (flag.Equals("Chấm Công"))
+            {
+                pContent.Controls.Clear();
+                pContent.Controls.Add(new UC_NhanVien_ChamCong() { Dock = DockStyle.Fill });
+            }
+            else if (flag.Equals("Báo Cáo"))
+            {
+                pContent.Controls.Clear();
+                pContent.Controls.Add(new UC_NhanVien_BaoCao() { Dock = DockStyle.Fill });
+            }
 
         }
 
@@ -107,12 +117,13 @@ namespace DoAn_QuanLyQuanCaFe
         private void navNhanVien_Click(object sender, EventArgs e)
         {
             pContent.Controls.Clear();
-            //pContent.Controls.Add(new UC_NhanVien() { Dock = DockStyle.Fill });
+            String[] lstChucnang = { "Chấm Công", "Báo Cáo" };
+            TaoListButtonChucNang(lstChucnang, flChucNang);
         }
 
         private void navNhapHang_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

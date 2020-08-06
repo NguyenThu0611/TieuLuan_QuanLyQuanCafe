@@ -202,10 +202,10 @@ F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQua
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.UC_NhanVien_BaoCao.resources
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.UC_NhanVien_ChamCong.resources
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.UC_NhapHang.resources
-F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.UC_ThemKhachHang.resources
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.csproj.GenerateResource.cache
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.exe.licenses
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.csproj.CoreCompileInputs.cache
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.csproj.CopyComplete
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.exe
 F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.pdb
+F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\DoAn_QuanLyQuanCaFe\obj\Debug\DoAn_QuanLyQuanCaFe.UC_KhuVuc.resources

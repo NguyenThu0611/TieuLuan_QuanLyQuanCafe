@@ -35,28 +35,29 @@
             System.Windows.Forms.Label sDTLabel;
             System.Windows.Forms.Label ngaySinhLabel;
             System.Windows.Forms.Label maTheLabel;
-            System.Windows.Forms.Label hieuLucTuLabel;
-            System.Windows.Forms.Label hieuLucDenLabel;
-            System.Windows.Forms.Label trangThaiLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_KhachHang));
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.labelItem2 = new DevComponents.DotNetBar.LabelItem();
             this.buttonItem3 = new DevComponents.DotNetBar.ButtonItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.trangThaiCheckEdit = new DevExpress.XtraEditors.CheckEdit();
-            this.theKhachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.doAn_QuanLyQuanCafeDataSet = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSet();
-            this.hieuLucDenDateEdit = new DevExpress.XtraEditors.DateEdit();
-            this.ngaySinhDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.khachHangDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sDTTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.diaChiTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.doAn_QuanLyQuanCafeDataSet = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSet();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.theKhachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tenKHTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.ngaySinhDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.sDTTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.maKHTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.maTheTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.hieuLucTuDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.diaChiTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.theKhachHangDataGridView = new System.Windows.Forms.DataGridView();
@@ -79,13 +80,6 @@
             this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.theKhachHangBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
-            this.khachHangDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khachHangTableAdapter = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.KhachHangTableAdapter();
             this.tableAdapterManager = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.TableAdapterManager();
             this.khachHangBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -109,33 +103,25 @@
             sDTLabel = new System.Windows.Forms.Label();
             ngaySinhLabel = new System.Windows.Forms.Label();
             maTheLabel = new System.Windows.Forms.Label();
-            hieuLucTuLabel = new System.Windows.Forms.Label();
-            hieuLucDenLabel = new System.Windows.Forms.Label();
-            trangThaiLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trangThaiCheckEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.theKhachHangBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doAn_QuanLyQuanCafeDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucDenDateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucDenDateEdit.Properties)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.theKhachHangBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tenKHTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngaySinhDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngaySinhDateEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sDTTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diaChiTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tenKHTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maKHTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maTheTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucTuDateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucTuDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diaChiTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabControlPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theKhachHangDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.theKhachHangBindingNavigator)).BeginInit();
             this.theKhachHangBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingNavigator)).BeginInit();
             this.khachHangBindingNavigator.SuspendLayout();
             this.SuspendLayout();
@@ -206,39 +192,6 @@
             maTheLabel.TabIndex = 10;
             maTheLabel.Text = "Mã Thẻ Khách Hàng";
             // 
-            // hieuLucTuLabel
-            // 
-            hieuLucTuLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            hieuLucTuLabel.AutoSize = true;
-            hieuLucTuLabel.Font = new System.Drawing.Font("Tahoma", 12F);
-            hieuLucTuLabel.Location = new System.Drawing.Point(807, 14);
-            hieuLucTuLabel.Name = "hieuLucTuLabel";
-            hieuLucTuLabel.Size = new System.Drawing.Size(177, 24);
-            hieuLucTuLabel.TabIndex = 14;
-            hieuLucTuLabel.Text = "Hiệu Lực Từ";
-            // 
-            // hieuLucDenLabel
-            // 
-            hieuLucDenLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            hieuLucDenLabel.AutoSize = true;
-            hieuLucDenLabel.Font = new System.Drawing.Font("Tahoma", 12F);
-            hieuLucDenLabel.Location = new System.Drawing.Point(807, 67);
-            hieuLucDenLabel.Name = "hieuLucDenLabel";
-            hieuLucDenLabel.Size = new System.Drawing.Size(177, 24);
-            hieuLucDenLabel.TabIndex = 16;
-            hieuLucDenLabel.Text = "Hiệu Lực Đến";
-            // 
-            // trangThaiLabel
-            // 
-            trangThaiLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            trangThaiLabel.AutoSize = true;
-            trangThaiLabel.Font = new System.Drawing.Font("Tahoma", 12F);
-            trangThaiLabel.Location = new System.Drawing.Point(807, 121);
-            trangThaiLabel.Name = "trangThaiLabel";
-            trangThaiLabel.Size = new System.Drawing.Size(177, 24);
-            trangThaiLabel.TabIndex = 18;
-            trangThaiLabel.Text = "Trạng Thái";
-            // 
             // buttonItem1
             // 
             this.buttonItem1.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem1.Image")));
@@ -282,6 +235,79 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1226, 667);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
+            // khachHangDataGridView
+            // 
+            this.khachHangDataGridView.AutoGenerateColumns = false;
+            this.khachHangDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.khachHangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.khachHangDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.khachHangDataGridView.DataSource = this.khachHangBindingSource;
+            this.khachHangDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.khachHangDataGridView.Location = new System.Drawing.Point(3, 169);
+            this.khachHangDataGridView.Name = "khachHangDataGridView";
+            this.khachHangDataGridView.RowHeadersWidth = 51;
+            this.khachHangDataGridView.RowTemplate.Height = 24;
+            this.khachHangDataGridView.Size = new System.Drawing.Size(1220, 294);
+            this.khachHangDataGridView.TabIndex = 12;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaKH";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã Khách Hàng";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenKH";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tên Khách Hàng";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "DiaChi";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Địa Chỉ ";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "SDT";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Số Điện Thoại";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "NgaySinh";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Ngày Sinh";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "MaThe";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Mã Thẻ";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // khachHangBindingSource
+            // 
+            this.khachHangBindingSource.DataMember = "KhachHang";
+            this.khachHangBindingSource.DataSource = this.doAn_QuanLyQuanCafeDataSet;
+            // 
+            // doAn_QuanLyQuanCafeDataSet
+            // 
+            this.doAn_QuanLyQuanCafeDataSet.DataSetName = "DoAn_QuanLyQuanCafeDataSet";
+            this.doAn_QuanLyQuanCafeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 6;
@@ -291,20 +317,14 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19F));
-            this.tableLayoutPanel2.Controls.Add(this.trangThaiCheckEdit, 5, 2);
-            this.tableLayoutPanel2.Controls.Add(trangThaiLabel, 4, 2);
             this.tableLayoutPanel2.Controls.Add(this.tenKHTextEdit, 1, 1);
             this.tableLayoutPanel2.Controls.Add(tenKHLabel, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.hieuLucDenDateEdit, 5, 1);
             this.tableLayoutPanel2.Controls.Add(maKHLabel, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.ngaySinhDateEdit, 1, 2);
             this.tableLayoutPanel2.Controls.Add(ngaySinhLabel, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.sDTTextEdit, 3, 1);
             this.tableLayoutPanel2.Controls.Add(sDTLabel, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.maKHTextEdit, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(hieuLucTuLabel, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(hieuLucDenLabel, 4, 1);
-            this.tableLayoutPanel2.Controls.Add(this.hieuLucTuDateEdit, 5, 0);
             this.tableLayoutPanel2.Controls.Add(maTheLabel, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.maTheTextEdit, 3, 0);
             this.tableLayoutPanel2.Controls.Add(diaChiLabel, 2, 2);
@@ -319,43 +339,21 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1220, 160);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // trangThaiCheckEdit
-            // 
-            this.trangThaiCheckEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.trangThaiCheckEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.theKhachHangBindingSource, "TrangThai", true));
-            this.trangThaiCheckEdit.Location = new System.Drawing.Point(990, 119);
-            this.trangThaiCheckEdit.Name = "trangThaiCheckEdit";
-            this.trangThaiCheckEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.trangThaiCheckEdit.Properties.Appearance.Options.UseFont = true;
-            this.trangThaiCheckEdit.Properties.Caption = "Active";
-            this.trangThaiCheckEdit.Size = new System.Drawing.Size(227, 28);
-            this.trangThaiCheckEdit.TabIndex = 19;
-            // 
             // theKhachHangBindingSource
             // 
             this.theKhachHangBindingSource.DataMember = "TheKhachHang";
             this.theKhachHangBindingSource.DataSource = this.doAn_QuanLyQuanCafeDataSet;
             // 
-            // doAn_QuanLyQuanCafeDataSet
+            // tenKHTextEdit
             // 
-            this.doAn_QuanLyQuanCafeDataSet.DataSetName = "DoAn_QuanLyQuanCafeDataSet";
-            this.doAn_QuanLyQuanCafeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hieuLucDenDateEdit
-            // 
-            this.hieuLucDenDateEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.hieuLucDenDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.theKhachHangBindingSource, "HieuLucDen", true));
-            this.hieuLucDenDateEdit.EditValue = null;
-            this.hieuLucDenDateEdit.Location = new System.Drawing.Point(990, 64);
-            this.hieuLucDenDateEdit.Name = "hieuLucDenDateEdit";
-            this.hieuLucDenDateEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.hieuLucDenDateEdit.Properties.Appearance.Options.UseFont = true;
-            this.hieuLucDenDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.hieuLucDenDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.hieuLucDenDateEdit.Size = new System.Drawing.Size(227, 30);
-            this.hieuLucDenDateEdit.TabIndex = 17;
+            this.tenKHTextEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tenKHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.khachHangBindingSource, "TenKH", true));
+            this.tenKHTextEdit.Location = new System.Drawing.Point(186, 64);
+            this.tenKHTextEdit.Name = "tenKHTextEdit";
+            this.tenKHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.tenKHTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.tenKHTextEdit.Size = new System.Drawing.Size(213, 30);
+            this.tenKHTextEdit.TabIndex = 3;
             // 
             // ngaySinhDateEdit
             // 
@@ -373,11 +371,6 @@
             this.ngaySinhDateEdit.Size = new System.Drawing.Size(213, 30);
             this.ngaySinhDateEdit.TabIndex = 9;
             // 
-            // khachHangBindingSource
-            // 
-            this.khachHangBindingSource.DataMember = "KhachHang";
-            this.khachHangBindingSource.DataSource = this.doAn_QuanLyQuanCafeDataSet;
-            // 
             // sDTTextEdit
             // 
             this.sDTTextEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -388,28 +381,6 @@
             this.sDTTextEdit.Properties.Appearance.Options.UseFont = true;
             this.sDTTextEdit.Size = new System.Drawing.Size(213, 30);
             this.sDTTextEdit.TabIndex = 7;
-            // 
-            // diaChiTextEdit
-            // 
-            this.diaChiTextEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.diaChiTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.khachHangBindingSource, "DiaChi", true));
-            this.diaChiTextEdit.Location = new System.Drawing.Point(588, 118);
-            this.diaChiTextEdit.Name = "diaChiTextEdit";
-            this.diaChiTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.diaChiTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.diaChiTextEdit.Size = new System.Drawing.Size(213, 30);
-            this.diaChiTextEdit.TabIndex = 5;
-            // 
-            // tenKHTextEdit
-            // 
-            this.tenKHTextEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tenKHTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.khachHangBindingSource, "TenKH", true));
-            this.tenKHTextEdit.Location = new System.Drawing.Point(186, 64);
-            this.tenKHTextEdit.Name = "tenKHTextEdit";
-            this.tenKHTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.tenKHTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.tenKHTextEdit.Size = new System.Drawing.Size(213, 30);
-            this.tenKHTextEdit.TabIndex = 3;
             // 
             // maKHTextEdit
             // 
@@ -433,21 +404,16 @@
             this.maTheTextEdit.Size = new System.Drawing.Size(213, 30);
             this.maTheTextEdit.TabIndex = 11;
             // 
-            // hieuLucTuDateEdit
+            // diaChiTextEdit
             // 
-            this.hieuLucTuDateEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.hieuLucTuDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.theKhachHangBindingSource, "HieuLucTu", true));
-            this.hieuLucTuDateEdit.EditValue = null;
-            this.hieuLucTuDateEdit.Location = new System.Drawing.Point(990, 11);
-            this.hieuLucTuDateEdit.Name = "hieuLucTuDateEdit";
-            this.hieuLucTuDateEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.hieuLucTuDateEdit.Properties.Appearance.Options.UseFont = true;
-            this.hieuLucTuDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.hieuLucTuDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.hieuLucTuDateEdit.Size = new System.Drawing.Size(227, 30);
-            this.hieuLucTuDateEdit.TabIndex = 15;
+            this.diaChiTextEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.diaChiTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.khachHangBindingSource, "DiaChi", true));
+            this.diaChiTextEdit.Location = new System.Drawing.Point(588, 118);
+            this.diaChiTextEdit.Name = "diaChiTextEdit";
+            this.diaChiTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.diaChiTextEdit.Properties.Appearance.Options.UseFont = true;
+            this.diaChiTextEdit.Size = new System.Drawing.Size(213, 30);
+            this.diaChiTextEdit.TabIndex = 5;
             // 
             // tabControl1
             // 
@@ -673,69 +639,6 @@
             this.tabItem2.Name = "tabItem2";
             this.tabItem2.Text = "Thẻ Khách Hàng";
             // 
-            // khachHangDataGridView
-            // 
-            this.khachHangDataGridView.AutoGenerateColumns = false;
-            this.khachHangDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.khachHangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.khachHangDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.khachHangDataGridView.DataSource = this.khachHangBindingSource;
-            this.khachHangDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.khachHangDataGridView.Location = new System.Drawing.Point(3, 169);
-            this.khachHangDataGridView.Name = "khachHangDataGridView";
-            this.khachHangDataGridView.RowHeadersWidth = 51;
-            this.khachHangDataGridView.RowTemplate.Height = 24;
-            this.khachHangDataGridView.Size = new System.Drawing.Size(1220, 294);
-            this.khachHangDataGridView.TabIndex = 12;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "MaKH";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã Khách Hàng";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenKH";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tên Khách Hàng";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "DiaChi";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Địa Chỉ ";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "SDT";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Số Điện Thoại";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "NgaySinh";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Ngày Sinh";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "MaThe";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Mã Thẻ";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
             // khachHangTableAdapter
             // 
             this.khachHangTableAdapter.ClearBeforeFill = true;
@@ -913,23 +816,19 @@
             this.Size = new System.Drawing.Size(1226, 694);
             this.Load += new System.EventHandler(this.UC_KhachHang_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doAn_QuanLyQuanCafeDataSet)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trangThaiCheckEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.theKhachHangBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.doAn_QuanLyQuanCafeDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucDenDateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucDenDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tenKHTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngaySinhDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngaySinhDateEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sDTTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diaChiTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tenKHTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maKHTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maTheTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucTuDateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hieuLucTuDateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diaChiTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabControlPanel1.ResumeLayout(false);
@@ -938,7 +837,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.theKhachHangBindingNavigator)).EndInit();
             this.theKhachHangBindingNavigator.ResumeLayout(false);
             this.theKhachHangBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingNavigator)).EndInit();
             this.khachHangBindingNavigator.ResumeLayout(false);
             this.khachHangBindingNavigator.PerformLayout();
@@ -1002,9 +900,6 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem1;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator5;
         private System.Windows.Forms.ToolStripButton theKhachHangBindingNavigatorSaveItem;
-        private DevExpress.XtraEditors.CheckEdit trangThaiCheckEdit;
-        private DevExpress.XtraEditors.DateEdit hieuLucDenDateEdit;
-        private DevExpress.XtraEditors.DateEdit hieuLucTuDateEdit;
         private System.Windows.Forms.DataGridView khachHangDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

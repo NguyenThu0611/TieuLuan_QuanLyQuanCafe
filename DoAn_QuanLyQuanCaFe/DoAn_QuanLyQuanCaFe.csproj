@@ -178,11 +178,11 @@
     <Compile Include="UC_NhapHang%28Edit%29.Designer.cs">
       <DependentUpon>UC_NhapHang%28Edit%29.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_ThemKhachHang.cs">
+    <Compile Include="UC_KhuVuc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC_ThemKhachHang.Designer.cs">
-      <DependentUpon>UC_ThemKhachHang.cs</DependentUpon>
+    <Compile Include="UC_KhuVuc.Designer.cs">
+      <DependentUpon>UC_KhuVuc.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Dialog_BaoCaoNhanVien_ThoiGian.resx">
       <DependentUpon>Dialog_BaoCaoNhanVien_ThoiGian.cs</DependentUpon>
@@ -245,8 +245,8 @@
     <EmbeddedResource Include="UC_NhapHang%28Edit%29.resx">
       <DependentUpon>UC_NhapHang%28Edit%29.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UC_ThemKhachHang.resx">
-      <DependentUpon>UC_ThemKhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="UC_KhuVuc.resx">
+      <DependentUpon>UC_KhuVuc.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DoAn_QuanLyQuanCafeDataSet.xsc">
       <DependentUpon>DoAn_QuanLyQuanCafeDataSet.xsd</DependentUpon>

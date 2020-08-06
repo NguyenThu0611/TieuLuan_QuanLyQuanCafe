@@ -1,6 +1,5 @@
-F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.dll.config
-F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.dll
-F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.pdb
-F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.csproj.CoreCompileInputs.cache
-F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.dll
-F:\STUDY\Semester_6\PhatTrienPhanMem&UDThongMinh\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.pdb
+F:\phát triển phần mềm\Đồ Án\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.dll.config
+F:\phát triển phần mềm\Đồ Án\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.dll
+F:\phát triển phần mềm\Đồ Án\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\bin\Debug\BLL_DAL.pdb
+F:\phát triển phần mềm\Đồ Án\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.dll
+F:\phát triển phần mềm\Đồ Án\0.TieuLuan\2.TieuLuan_QuanLyQuanCafe\BLL_DAL\obj\Debug\BLL_DAL.pdb

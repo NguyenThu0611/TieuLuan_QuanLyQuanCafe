@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_NhanVien_BaoCao));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnXuat = new DevComponents.DotNetBar.ButtonX();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnThongKe_byTime = new DevComponents.DotNetBar.ButtonX();
@@ -38,7 +39,6 @@
             this.dtpkToDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.dtpkFromDate = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnXuat = new DevComponents.DotNetBar.ButtonX();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -57,11 +57,12 @@
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.76323F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 75.06964F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1172, 718);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1005, 583);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -73,12 +74,28 @@
             this.tableLayoutPanel2.Controls.Add(this.btnXuat, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.groupPanel1, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1166, 111);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(999, 91);
             this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // btnXuat
+            // 
+            this.btnXuat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnXuat.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnXuat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnXuat.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.btnXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnXuat.Image")));
+            this.btnXuat.Location = new System.Drawing.Point(680, 21);
+            this.btnXuat.Margin = new System.Windows.Forms.Padding(17, 2, 3, 2);
+            this.btnXuat.Name = "btnXuat";
+            this.btnXuat.Size = new System.Drawing.Size(152, 49);
+            this.btnXuat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnXuat.TabIndex = 2;
+            this.btnXuat.Text = "Xuất Báo Cáo";
             // 
             // groupPanel1
             // 
@@ -88,9 +105,10 @@
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.groupPanel1.Location = new System.Drawing.Point(393, 3);
+            this.groupPanel1.Location = new System.Drawing.Point(337, 2);
+            this.groupPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(378, 105);
+            this.groupPanel1.Size = new System.Drawing.Size(323, 87);
             // 
             // 
             // 
@@ -130,11 +148,12 @@
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.66667F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(372, 76);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(317, 62);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // btnThongKe_byTime
@@ -145,8 +164,8 @@
             this.btnThongKe_byTime.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnThongKe_byTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongKe_byTime.Image = ((System.Drawing.Image)(resources.GetObject("btnThongKe_byTime.Image")));
-            this.btnThongKe_byTime.Location = new System.Drawing.Point(90, 37);
-            this.btnThongKe_byTime.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.btnThongKe_byTime.Location = new System.Drawing.Point(63, 30);
+            this.btnThongKe_byTime.Margin = new System.Windows.Forms.Padding(3, 2, 9, 2);
             this.btnThongKe_byTime.Name = "btnThongKe_byTime";
             this.btnThongKe_byTime.Size = new System.Drawing.Size(184, 38);
             this.btnThongKe_byTime.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -162,11 +181,12 @@
             this.tableLayoutPanel6.Controls.Add(this.dtpkToDate, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.dtpkFromDate, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(366, 28);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(311, 24);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // dtpkToDate
@@ -181,7 +201,8 @@
             this.dtpkToDate.ButtonDropDown.Visible = true;
             this.dtpkToDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpkToDate.IsPopupCalendarOpen = false;
-            this.dtpkToDate.Location = new System.Drawing.Point(186, 3);
+            this.dtpkToDate.Location = new System.Drawing.Point(158, 2);
+            this.dtpkToDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             // 
             // 
             // 
@@ -211,7 +232,7 @@
             this.dtpkToDate.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dtpkToDate.MonthCalendar.TodayButtonVisible = true;
             this.dtpkToDate.Name = "dtpkToDate";
-            this.dtpkToDate.Size = new System.Drawing.Size(177, 27);
+            this.dtpkToDate.Size = new System.Drawing.Size(150, 23);
             this.dtpkToDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.dtpkToDate.TabIndex = 1;
             // 
@@ -227,7 +248,8 @@
             this.dtpkFromDate.ButtonDropDown.Visible = true;
             this.dtpkFromDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpkFromDate.IsPopupCalendarOpen = false;
-            this.dtpkFromDate.Location = new System.Drawing.Point(3, 3);
+            this.dtpkFromDate.Location = new System.Drawing.Point(3, 2);
+            this.dtpkFromDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             // 
             // 
             // 
@@ -257,7 +279,7 @@
             this.dtpkFromDate.MonthCalendar.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.dtpkFromDate.MonthCalendar.TodayButtonVisible = true;
             this.dtpkFromDate.Name = "dtpkFromDate";
-            this.dtpkFromDate.Size = new System.Drawing.Size(177, 27);
+            this.dtpkFromDate.Size = new System.Drawing.Size(149, 23);
             this.dtpkFromDate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.dtpkFromDate.TabIndex = 0;
             // 
@@ -266,35 +288,22 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 120);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 97);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1166, 595);
+            this.dataGridView1.Size = new System.Drawing.Size(999, 484);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // btnXuat
-            // 
-            this.btnXuat.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnXuat.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnXuat.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnXuat.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.btnXuat.Image = ((System.Drawing.Image)(resources.GetObject("btnXuat.Image")));
-            this.btnXuat.Location = new System.Drawing.Point(794, 25);
-            this.btnXuat.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
-            this.btnXuat.Name = "btnXuat";
-            this.btnXuat.Size = new System.Drawing.Size(177, 60);
-            this.btnXuat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnXuat.TabIndex = 2;
-            this.btnXuat.Text = "Xuất Báo Cáo";
             // 
             // UC_NhanVien_BaoCao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_NhanVien_BaoCao";
-            this.Size = new System.Drawing.Size(1172, 718);
+            this.Size = new System.Drawing.Size(1005, 583);
             this.Load += new System.EventHandler(this.UC_NhanVien_BaoCao_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);

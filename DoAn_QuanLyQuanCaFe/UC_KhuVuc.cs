@@ -25,5 +25,10 @@ namespace DoAn_QuanLyQuanCaFe
             this.tableAdapterManager.UpdateAll(this.doAn_QuanLyQuanCafeDataSet);
 
         }
+
+        private void maBanLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

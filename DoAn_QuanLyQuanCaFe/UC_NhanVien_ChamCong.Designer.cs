@@ -44,13 +44,9 @@
             this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.chiTietCaLamDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewComboBoxExColumn15 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
             this.nhanVienBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.doAn_QuanLyQuanCafeDataSet1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSet();
-            this.dataGridViewComboBoxExColumn16 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
             this.loaiCaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiTietCaLamBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.ngayLamDateEdit1 = new DevExpress.XtraEditors.DateEdit();
@@ -87,9 +83,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.nhanVienBindingSource1BindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nhanVienDataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.thoiGianLamSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
             this.tenNVTextEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -119,6 +112,13 @@
             this.tableAdapterManager1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.TableAdapterManager();
             this.chiTietCaLamTableAdapter1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.ChiTietCaLamTableAdapter();
             this.loaiCaTableAdapter1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.LoaiCaTableAdapter();
+            this.dataGridViewComboBoxExColumn15 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
+            this.dataGridViewComboBoxExColumn16 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             thoiGianLamLabel = new System.Windows.Forms.Label();
             tenNVLabel = new System.Windows.Forms.Label();
             maNVLabel = new System.Windows.Forms.Label();
@@ -170,42 +170,42 @@
             thoiGianLamLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             thoiGianLamLabel.AutoSize = true;
             thoiGianLamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            thoiGianLamLabel.Location = new System.Drawing.Point(3, 81);
+            thoiGianLamLabel.Location = new System.Drawing.Point(3, 83);
             thoiGianLamLabel.Name = "thoiGianLamLabel";
-            thoiGianLamLabel.Size = new System.Drawing.Size(161, 20);
+            thoiGianLamLabel.Size = new System.Drawing.Size(161, 17);
             thoiGianLamLabel.TabIndex = 5;
-            thoiGianLamLabel.Text = "Thoi Gian Lam:";
+            thoiGianLamLabel.Text = "Thời Gian Làm";
             // 
             // tenNVLabel
             // 
             tenNVLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             tenNVLabel.AutoSize = true;
             tenNVLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tenNVLabel.Location = new System.Drawing.Point(3, 44);
+            tenNVLabel.Location = new System.Drawing.Point(3, 46);
             tenNVLabel.Name = "tenNVLabel";
-            tenNVLabel.Size = new System.Drawing.Size(161, 20);
+            tenNVLabel.Size = new System.Drawing.Size(161, 17);
             tenNVLabel.TabIndex = 3;
-            tenNVLabel.Text = "Ten NV:";
+            tenNVLabel.Text = "Tên Nhân Viên:";
             // 
             // maNVLabel
             // 
             maNVLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             maNVLabel.AutoSize = true;
             maNVLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maNVLabel.Location = new System.Drawing.Point(3, 8);
+            maNVLabel.Location = new System.Drawing.Point(3, 9);
             maNVLabel.Name = "maNVLabel";
-            maNVLabel.Size = new System.Drawing.Size(161, 20);
+            maNVLabel.Size = new System.Drawing.Size(161, 17);
             maNVLabel.TabIndex = 1;
-            maNVLabel.Text = "Ma NV:";
+            maNVLabel.Text = "Mã Nhân Viên:";
             // 
             // maLoaiCaLabel
             // 
             maLoaiCaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             maLoaiCaLabel.AutoSize = true;
             maLoaiCaLabel.Font = new System.Drawing.Font("Tahoma", 10F);
-            maLoaiCaLabel.Location = new System.Drawing.Point(3, 6);
+            maLoaiCaLabel.Location = new System.Drawing.Point(3, 8);
             maLoaiCaLabel.Name = "maLoaiCaLabel";
-            maLoaiCaLabel.Size = new System.Drawing.Size(161, 21);
+            maLoaiCaLabel.Size = new System.Drawing.Size(161, 17);
             maLoaiCaLabel.TabIndex = 3;
             maLoaiCaLabel.Text = "Ma Loai Ca:";
             // 
@@ -214,9 +214,9 @@
             tenLoaiCaLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             tenLoaiCaLabel.AutoSize = true;
             tenLoaiCaLabel.Font = new System.Drawing.Font("Tahoma", 10F);
-            tenLoaiCaLabel.Location = new System.Drawing.Point(3, 40);
+            tenLoaiCaLabel.Location = new System.Drawing.Point(3, 43);
             tenLoaiCaLabel.Name = "tenLoaiCaLabel";
-            tenLoaiCaLabel.Size = new System.Drawing.Size(161, 21);
+            tenLoaiCaLabel.Size = new System.Drawing.Size(161, 17);
             tenLoaiCaLabel.TabIndex = 5;
             tenLoaiCaLabel.Text = "Ten Loai Ca:";
             // 
@@ -225,44 +225,44 @@
             maNVLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             maNVLabel1.AutoSize = true;
             maNVLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maNVLabel1.Location = new System.Drawing.Point(3, 10);
+            maNVLabel1.Location = new System.Drawing.Point(3, 11);
             maNVLabel1.Name = "maNVLabel1";
-            maNVLabel1.Size = new System.Drawing.Size(161, 20);
+            maNVLabel1.Size = new System.Drawing.Size(161, 17);
             maNVLabel1.TabIndex = 0;
-            maNVLabel1.Text = "Ma NV:";
+            maNVLabel1.Text = "Mã Nhân Viên:";
             // 
             // maLoaiCaLabel1
             // 
             maLoaiCaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             maLoaiCaLabel1.AutoSize = true;
             maLoaiCaLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            maLoaiCaLabel1.Location = new System.Drawing.Point(3, 50);
+            maLoaiCaLabel1.Location = new System.Drawing.Point(3, 51);
             maLoaiCaLabel1.Name = "maLoaiCaLabel1";
-            maLoaiCaLabel1.Size = new System.Drawing.Size(161, 20);
+            maLoaiCaLabel1.Size = new System.Drawing.Size(161, 17);
             maLoaiCaLabel1.TabIndex = 2;
-            maLoaiCaLabel1.Text = "Ma Loai Ca:";
+            maLoaiCaLabel1.Text = "Mã Loại Ca:";
             // 
             // soThoiGianLamLabel
             // 
             soThoiGianLamLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             soThoiGianLamLabel.AutoSize = true;
             soThoiGianLamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            soThoiGianLamLabel.Location = new System.Drawing.Point(3, 90);
+            soThoiGianLamLabel.Location = new System.Drawing.Point(3, 91);
             soThoiGianLamLabel.Name = "soThoiGianLamLabel";
-            soThoiGianLamLabel.Size = new System.Drawing.Size(161, 20);
+            soThoiGianLamLabel.Size = new System.Drawing.Size(161, 17);
             soThoiGianLamLabel.TabIndex = 4;
-            soThoiGianLamLabel.Text = "So Thoi Gian Lam:";
+            soThoiGianLamLabel.Text = "Số Thời Gian Làm:";
             // 
             // ngayLamLabel
             // 
             ngayLamLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             ngayLamLabel.AutoSize = true;
             ngayLamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ngayLamLabel.Location = new System.Drawing.Point(3, 130);
+            ngayLamLabel.Location = new System.Drawing.Point(3, 132);
             ngayLamLabel.Name = "ngayLamLabel";
-            ngayLamLabel.Size = new System.Drawing.Size(161, 20);
+            ngayLamLabel.Size = new System.Drawing.Size(161, 17);
             ngayLamLabel.TabIndex = 6;
-            ngayLamLabel.Text = "Ngay Lam:";
+            ngayLamLabel.Text = "Ngày Làm:";
             // 
             // tableLayoutPanel10
             // 
@@ -350,7 +350,7 @@
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(564, 669);
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(564, 673);
             this.tableLayoutPanel17.TabIndex = 0;
             // 
             // chiTietCaLamDataGridView1
@@ -365,30 +365,12 @@
             this.dataGridViewTextBoxColumn18});
             this.chiTietCaLamDataGridView1.DataSource = this.chiTietCaLamBindingSource1;
             this.chiTietCaLamDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chiTietCaLamDataGridView1.Location = new System.Drawing.Point(3, 203);
+            this.chiTietCaLamDataGridView1.Location = new System.Drawing.Point(3, 204);
             this.chiTietCaLamDataGridView1.Name = "chiTietCaLamDataGridView1";
             this.chiTietCaLamDataGridView1.RowHeadersWidth = 51;
             this.chiTietCaLamDataGridView1.RowTemplate.Height = 24;
-            this.chiTietCaLamDataGridView1.Size = new System.Drawing.Size(558, 463);
+            this.chiTietCaLamDataGridView1.Size = new System.Drawing.Size(558, 466);
             this.chiTietCaLamDataGridView1.TabIndex = 0;
-            // 
-            // dataGridViewComboBoxExColumn15
-            // 
-            this.dataGridViewComboBoxExColumn15.DataPropertyName = "MaNV";
-            this.dataGridViewComboBoxExColumn15.DataSource = this.nhanVienBindingSource1;
-            this.dataGridViewComboBoxExColumn15.DisplayMember = "TenNV";
-            this.dataGridViewComboBoxExColumn15.DropDownHeight = 106;
-            this.dataGridViewComboBoxExColumn15.DropDownWidth = 121;
-            this.dataGridViewComboBoxExColumn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataGridViewComboBoxExColumn15.HeaderText = "MaNV";
-            this.dataGridViewComboBoxExColumn15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridViewComboBoxExColumn15.IntegralHeight = false;
-            this.dataGridViewComboBoxExColumn15.ItemHeight = 17;
-            this.dataGridViewComboBoxExColumn15.MinimumWidth = 6;
-            this.dataGridViewComboBoxExColumn15.Name = "dataGridViewComboBoxExColumn15";
-            this.dataGridViewComboBoxExColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxExColumn15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dataGridViewComboBoxExColumn15.ValueMember = "MaNV";
             // 
             // nhanVienBindingSource1
             // 
@@ -400,42 +382,10 @@
             this.doAn_QuanLyQuanCafeDataSet1.DataSetName = "DoAn_QuanLyQuanCafeDataSet";
             this.doAn_QuanLyQuanCafeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridViewComboBoxExColumn16
-            // 
-            this.dataGridViewComboBoxExColumn16.DataPropertyName = "MaLoaiCa";
-            this.dataGridViewComboBoxExColumn16.DataSource = this.loaiCaBindingSource1;
-            this.dataGridViewComboBoxExColumn16.DisplayMember = "TenLoaiCa";
-            this.dataGridViewComboBoxExColumn16.DropDownHeight = 106;
-            this.dataGridViewComboBoxExColumn16.DropDownWidth = 121;
-            this.dataGridViewComboBoxExColumn16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataGridViewComboBoxExColumn16.HeaderText = "MaLoaiCa";
-            this.dataGridViewComboBoxExColumn16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridViewComboBoxExColumn16.IntegralHeight = false;
-            this.dataGridViewComboBoxExColumn16.ItemHeight = 17;
-            this.dataGridViewComboBoxExColumn16.MinimumWidth = 6;
-            this.dataGridViewComboBoxExColumn16.Name = "dataGridViewComboBoxExColumn16";
-            this.dataGridViewComboBoxExColumn16.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxExColumn16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dataGridViewComboBoxExColumn16.ValueMember = "MaLoaiCa";
-            // 
             // loaiCaBindingSource1
             // 
             this.loaiCaBindingSource1.DataMember = "LoaiCa";
             this.loaiCaBindingSource1.DataSource = this.doAn_QuanLyQuanCafeDataSet1;
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "SoThoiGianLam";
-            this.dataGridViewTextBoxColumn17.HeaderText = "SoThoiGianLam";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "NgayLam";
-            this.dataGridViewTextBoxColumn18.HeaderText = "NgayLam";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             // 
             // chiTietCaLamBindingSource1
             // 
@@ -464,7 +414,7 @@
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(558, 161);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(558, 162);
             this.tableLayoutPanel18.TabIndex = 2;
             // 
             // ngayLamDateEdit1
@@ -472,7 +422,7 @@
             this.ngayLamDateEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ngayLamDateEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.chiTietCaLamBindingSource1, "NgayLam", true));
             this.ngayLamDateEdit1.EditValue = null;
-            this.ngayLamDateEdit1.Location = new System.Drawing.Point(170, 127);
+            this.ngayLamDateEdit1.Location = new System.Drawing.Point(170, 128);
             this.ngayLamDateEdit1.Name = "ngayLamDateEdit1";
             this.ngayLamDateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngayLamDateEdit1.Properties.Appearance.Options.UseFont = true;
@@ -480,7 +430,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.ngayLamDateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.ngayLamDateEdit1.Size = new System.Drawing.Size(217, 26);
+            this.ngayLamDateEdit1.Size = new System.Drawing.Size(217, 24);
             this.ngayLamDateEdit1.TabIndex = 7;
             // 
             // soThoiGianLamSpinEdit1
@@ -498,7 +448,7 @@
             this.soThoiGianLamSpinEdit1.Properties.Appearance.Options.UseFont = true;
             this.soThoiGianLamSpinEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.soThoiGianLamSpinEdit1.Size = new System.Drawing.Size(217, 26);
+            this.soThoiGianLamSpinEdit1.Size = new System.Drawing.Size(217, 24);
             this.soThoiGianLamSpinEdit1.TabIndex = 5;
             // 
             // maLoaiCaTextEdit3
@@ -509,7 +459,7 @@
             this.maLoaiCaTextEdit3.Name = "maLoaiCaTextEdit3";
             this.maLoaiCaTextEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maLoaiCaTextEdit3.Properties.Appearance.Options.UseFont = true;
-            this.maLoaiCaTextEdit3.Size = new System.Drawing.Size(217, 26);
+            this.maLoaiCaTextEdit3.Size = new System.Drawing.Size(217, 24);
             this.maLoaiCaTextEdit3.TabIndex = 3;
             // 
             // maNVTextEdit3
@@ -520,7 +470,7 @@
             this.maNVTextEdit3.Name = "maNVTextEdit3";
             this.maNVTextEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maNVTextEdit3.Properties.Appearance.Options.UseFont = true;
-            this.maNVTextEdit3.Size = new System.Drawing.Size(217, 26);
+            this.maNVTextEdit3.Size = new System.Drawing.Size(217, 24);
             this.maNVTextEdit3.TabIndex = 1;
             // 
             // chiTietCaLamBindingSource1BindingNavigator
@@ -561,13 +511,13 @@
             this.toolStripButton18.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton18.Image")));
             this.toolStripButton18.Name = "toolStripButton18";
             this.toolStripButton18.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton18.Size = new System.Drawing.Size(29, 30);
+            this.toolStripButton18.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton18.Text = "Add new";
             // 
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(45, 30);
+            this.toolStripLabel3.Size = new System.Drawing.Size(35, 30);
             this.toolStripLabel3.Text = "of {0}";
             this.toolStripLabel3.ToolTipText = "Total number of items";
             // 
@@ -577,7 +527,7 @@
             this.toolStripButton19.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton19.Image")));
             this.toolStripButton19.Name = "toolStripButton19";
             this.toolStripButton19.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton19.Size = new System.Drawing.Size(29, 30);
+            this.toolStripButton19.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton19.Text = "Delete";
             // 
             // toolStripButton14
@@ -586,7 +536,7 @@
             this.toolStripButton14.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton14.Image")));
             this.toolStripButton14.Name = "toolStripButton14";
             this.toolStripButton14.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton14.Size = new System.Drawing.Size(29, 30);
+            this.toolStripButton14.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton14.Text = "Move first";
             // 
             // toolStripButton15
@@ -595,7 +545,7 @@
             this.toolStripButton15.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton15.Image")));
             this.toolStripButton15.Name = "toolStripButton15";
             this.toolStripButton15.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton15.Size = new System.Drawing.Size(29, 30);
+            this.toolStripButton15.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton15.Text = "Move previous";
             // 
             // toolStripSeparator7
@@ -607,7 +557,6 @@
             // 
             this.toolStripTextBox3.AccessibleName = "Position";
             this.toolStripTextBox3.AutoSize = false;
-            this.toolStripTextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox3.Name = "toolStripTextBox3";
             this.toolStripTextBox3.Size = new System.Drawing.Size(50, 27);
             this.toolStripTextBox3.Text = "0";
@@ -624,7 +573,7 @@
             this.toolStripButton16.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton16.Image")));
             this.toolStripButton16.Name = "toolStripButton16";
             this.toolStripButton16.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton16.Size = new System.Drawing.Size(29, 30);
+            this.toolStripButton16.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton16.Text = "Move next";
             // 
             // toolStripButton17
@@ -633,7 +582,7 @@
             this.toolStripButton17.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton17.Image")));
             this.toolStripButton17.Name = "toolStripButton17";
             this.toolStripButton17.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton17.Size = new System.Drawing.Size(29, 30);
+            this.toolStripButton17.Size = new System.Drawing.Size(24, 30);
             this.toolStripButton17.Text = "Move last";
             // 
             // toolStripSeparator9
@@ -647,7 +596,7 @@
             this.chiTietCaLamBindingSource1BindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("chiTietCaLamBindingSource1BindingNavigatorSaveItem.Image")));
             this.chiTietCaLamBindingSource1BindingNavigatorSaveItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.chiTietCaLamBindingSource1BindingNavigatorSaveItem.Name = "chiTietCaLamBindingSource1BindingNavigatorSaveItem";
-            this.chiTietCaLamBindingSource1BindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 30);
+            this.chiTietCaLamBindingSource1BindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 30);
             this.chiTietCaLamBindingSource1BindingNavigatorSaveItem.Text = "toolStripButton20";
             this.chiTietCaLamBindingSource1BindingNavigatorSaveItem.Click += new System.EventHandler(this.chiTietCaLamBindingSource1BindingNavigatorSaveItem_Click);
             // 
@@ -722,7 +671,7 @@
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(565, 387);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(565, 391);
             this.tableLayoutPanel13.TabIndex = 0;
             // 
             // nhanVienBindingSource1BindingNavigator
@@ -753,7 +702,7 @@
             this.nhanVienBindingSource1BindingNavigator.MovePreviousItem = this.toolStripButton3;
             this.nhanVienBindingSource1BindingNavigator.Name = "nhanVienBindingSource1BindingNavigator";
             this.nhanVienBindingSource1BindingNavigator.PositionItem = this.toolStripTextBox1;
-            this.nhanVienBindingSource1BindingNavigator.Size = new System.Drawing.Size(565, 38);
+            this.nhanVienBindingSource1BindingNavigator.Size = new System.Drawing.Size(565, 39);
             this.nhanVienBindingSource1BindingNavigator.TabIndex = 1;
             this.nhanVienBindingSource1BindingNavigator.Text = "bindingNavigator1";
             // 
@@ -763,13 +712,13 @@
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton6.Size = new System.Drawing.Size(29, 35);
+            this.toolStripButton6.Size = new System.Drawing.Size(24, 36);
             this.toolStripButton6.Text = "Add new";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(45, 35);
+            this.toolStripLabel1.Size = new System.Drawing.Size(35, 36);
             this.toolStripLabel1.Text = "of {0}";
             this.toolStripLabel1.ToolTipText = "Total number of items";
             // 
@@ -779,7 +728,7 @@
             this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton7.Size = new System.Drawing.Size(29, 35);
+            this.toolStripButton7.Size = new System.Drawing.Size(24, 36);
             this.toolStripButton7.Text = "Delete";
             // 
             // toolStripButton2
@@ -788,7 +737,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton2.Size = new System.Drawing.Size(29, 35);
+            this.toolStripButton2.Size = new System.Drawing.Size(24, 36);
             this.toolStripButton2.Text = "Move first";
             // 
             // toolStripButton3
@@ -797,19 +746,18 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 35);
+            this.toolStripButton3.Size = new System.Drawing.Size(24, 36);
             this.toolStripButton3.Text = "Move previous";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 38);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
             // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.AccessibleName = "Position";
             this.toolStripTextBox1.AutoSize = false;
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(50, 27);
             this.toolStripTextBox1.Text = "0";
@@ -818,7 +766,7 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 38);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 39);
             // 
             // toolStripButton4
             // 
@@ -826,7 +774,7 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton4.Size = new System.Drawing.Size(29, 35);
+            this.toolStripButton4.Size = new System.Drawing.Size(24, 36);
             this.toolStripButton4.Text = "Move next";
             // 
             // toolStripButton5
@@ -835,20 +783,20 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton5.Size = new System.Drawing.Size(29, 35);
+            this.toolStripButton5.Size = new System.Drawing.Size(24, 36);
             this.toolStripButton5.Text = "Move last";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 38);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 39);
             // 
             // nhanVienBindingSource1BindingNavigatorSaveItem
             // 
             this.nhanVienBindingSource1BindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.nhanVienBindingSource1BindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("nhanVienBindingSource1BindingNavigatorSaveItem.Image")));
             this.nhanVienBindingSource1BindingNavigatorSaveItem.Name = "nhanVienBindingSource1BindingNavigatorSaveItem";
-            this.nhanVienBindingSource1BindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 35);
+            this.nhanVienBindingSource1BindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 36);
             this.nhanVienBindingSource1BindingNavigatorSaveItem.Text = "Save Data";
             this.nhanVienBindingSource1BindingNavigatorSaveItem.Click += new System.EventHandler(this.nhanVienBindingSource1BindingNavigatorSaveItem_Click);
             // 
@@ -863,33 +811,12 @@
             this.dataGridViewTextBoxColumn12});
             this.nhanVienDataGridView1.DataSource = this.nhanVienBindingSource1;
             this.nhanVienDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nhanVienDataGridView1.Location = new System.Drawing.Point(3, 157);
+            this.nhanVienDataGridView1.Location = new System.Drawing.Point(3, 159);
             this.nhanVienDataGridView1.Name = "nhanVienDataGridView1";
             this.nhanVienDataGridView1.RowHeadersWidth = 51;
             this.nhanVienDataGridView1.RowTemplate.Height = 24;
-            this.nhanVienDataGridView1.Size = new System.Drawing.Size(559, 227);
+            this.nhanVienDataGridView1.Size = new System.Drawing.Size(559, 229);
             this.nhanVienDataGridView1.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "MaNV";
-            this.dataGridViewTextBoxColumn10.HeaderText = "MaNV";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "TenNV";
-            this.dataGridViewTextBoxColumn11.HeaderText = "TenNV";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "ThoiGianLam";
-            this.dataGridViewTextBoxColumn12.HeaderText = "ThoiGianLam";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
             // tableLayoutPanel15
             // 
@@ -904,13 +831,13 @@
             this.tableLayoutPanel15.Controls.Add(tenNVLabel, 0, 1);
             this.tableLayoutPanel15.Controls.Add(thoiGianLamLabel, 0, 2);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(3, 41);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(3, 42);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 3;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.5F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.5F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(559, 110);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(559, 111);
             this.tableLayoutPanel15.TabIndex = 2;
             // 
             // thoiGianLamSpinEdit1
@@ -922,13 +849,13 @@
             0,
             0,
             0});
-            this.thoiGianLamSpinEdit1.Location = new System.Drawing.Point(170, 78);
+            this.thoiGianLamSpinEdit1.Location = new System.Drawing.Point(170, 79);
             this.thoiGianLamSpinEdit1.Name = "thoiGianLamSpinEdit1";
             this.thoiGianLamSpinEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thoiGianLamSpinEdit1.Properties.Appearance.Options.UseFont = true;
             this.thoiGianLamSpinEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.thoiGianLamSpinEdit1.Size = new System.Drawing.Size(217, 26);
+            this.thoiGianLamSpinEdit1.Size = new System.Drawing.Size(217, 24);
             this.thoiGianLamSpinEdit1.TabIndex = 6;
             // 
             // tenNVTextEdit1
@@ -939,7 +866,7 @@
             this.tenNVTextEdit1.Name = "tenNVTextEdit1";
             this.tenNVTextEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenNVTextEdit1.Properties.Appearance.Options.UseFont = true;
-            this.tenNVTextEdit1.Size = new System.Drawing.Size(217, 26);
+            this.tenNVTextEdit1.Size = new System.Drawing.Size(217, 24);
             this.tenNVTextEdit1.TabIndex = 4;
             // 
             // maNVTextEdit2
@@ -950,7 +877,7 @@
             this.maNVTextEdit2.Name = "maNVTextEdit2";
             this.maNVTextEdit2.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maNVTextEdit2.Properties.Appearance.Options.UseFont = true;
-            this.maNVTextEdit2.Size = new System.Drawing.Size(217, 26);
+            this.maNVTextEdit2.Size = new System.Drawing.Size(217, 24);
             this.maNVTextEdit2.TabIndex = 2;
             // 
             // groupPanel5
@@ -1009,7 +936,7 @@
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(565, 247);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(565, 251);
             this.tableLayoutPanel12.TabIndex = 0;
             // 
             // loaiCaDataGridView1
@@ -1022,11 +949,11 @@
             this.dataGridViewTextBoxColumn14});
             this.loaiCaDataGridView1.DataSource = this.loaiCaBindingSource1;
             this.loaiCaDataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loaiCaDataGridView1.Location = new System.Drawing.Point(3, 101);
+            this.loaiCaDataGridView1.Location = new System.Drawing.Point(3, 103);
             this.loaiCaDataGridView1.Name = "loaiCaDataGridView1";
             this.loaiCaDataGridView1.RowHeadersWidth = 51;
             this.loaiCaDataGridView1.RowTemplate.Height = 24;
-            this.loaiCaDataGridView1.Size = new System.Drawing.Size(559, 143);
+            this.loaiCaDataGridView1.Size = new System.Drawing.Size(559, 145);
             this.loaiCaDataGridView1.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn13
@@ -1070,7 +997,7 @@
             this.loaiCaBindingSource1BindingNavigator.MovePreviousItem = this.toolStripButton9;
             this.loaiCaBindingSource1BindingNavigator.Name = "loaiCaBindingSource1BindingNavigator";
             this.loaiCaBindingSource1BindingNavigator.PositionItem = this.toolStripTextBox2;
-            this.loaiCaBindingSource1BindingNavigator.Size = new System.Drawing.Size(565, 24);
+            this.loaiCaBindingSource1BindingNavigator.Size = new System.Drawing.Size(565, 25);
             this.loaiCaBindingSource1BindingNavigator.TabIndex = 1;
             this.loaiCaBindingSource1BindingNavigator.Text = "bindingNavigator1";
             // 
@@ -1080,13 +1007,13 @@
             this.toolStripButton12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton12.Image")));
             this.toolStripButton12.Name = "toolStripButton12";
             this.toolStripButton12.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton12.Size = new System.Drawing.Size(29, 21);
+            this.toolStripButton12.Size = new System.Drawing.Size(24, 22);
             this.toolStripButton12.Text = "Add new";
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(45, 21);
+            this.toolStripLabel2.Size = new System.Drawing.Size(35, 22);
             this.toolStripLabel2.Text = "of {0}";
             this.toolStripLabel2.ToolTipText = "Total number of items";
             // 
@@ -1096,7 +1023,7 @@
             this.toolStripButton13.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton13.Image")));
             this.toolStripButton13.Name = "toolStripButton13";
             this.toolStripButton13.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton13.Size = new System.Drawing.Size(29, 21);
+            this.toolStripButton13.Size = new System.Drawing.Size(24, 22);
             this.toolStripButton13.Text = "Delete";
             // 
             // toolStripButton8
@@ -1105,7 +1032,7 @@
             this.toolStripButton8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton8.Image")));
             this.toolStripButton8.Name = "toolStripButton8";
             this.toolStripButton8.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton8.Size = new System.Drawing.Size(29, 21);
+            this.toolStripButton8.Size = new System.Drawing.Size(24, 22);
             this.toolStripButton8.Text = "Move first";
             // 
             // toolStripButton9
@@ -1114,19 +1041,18 @@
             this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
             this.toolStripButton9.Name = "toolStripButton9";
             this.toolStripButton9.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton9.Size = new System.Drawing.Size(29, 21);
+            this.toolStripButton9.Size = new System.Drawing.Size(24, 22);
             this.toolStripButton9.Text = "Move previous";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 24);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripTextBox2
             // 
             this.toolStripTextBox2.AccessibleName = "Position";
             this.toolStripTextBox2.AutoSize = false;
-            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.Size = new System.Drawing.Size(50, 27);
             this.toolStripTextBox2.Text = "0";
@@ -1135,7 +1061,7 @@
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 24);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton10
             // 
@@ -1143,7 +1069,7 @@
             this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
             this.toolStripButton10.Name = "toolStripButton10";
             this.toolStripButton10.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton10.Size = new System.Drawing.Size(29, 21);
+            this.toolStripButton10.Size = new System.Drawing.Size(24, 22);
             this.toolStripButton10.Text = "Move next";
             // 
             // toolStripButton11
@@ -1152,13 +1078,13 @@
             this.toolStripButton11.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton11.Image")));
             this.toolStripButton11.Name = "toolStripButton11";
             this.toolStripButton11.RightToLeftAutoMirrorImage = true;
-            this.toolStripButton11.Size = new System.Drawing.Size(29, 21);
+            this.toolStripButton11.Size = new System.Drawing.Size(24, 22);
             this.toolStripButton11.Text = "Move last";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 24);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 25);
             // 
             // loaiCaBindingSource1BindingNavigatorSaveItem
             // 
@@ -1166,7 +1092,7 @@
             this.loaiCaBindingSource1BindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("loaiCaBindingSource1BindingNavigatorSaveItem.Image")));
             this.loaiCaBindingSource1BindingNavigatorSaveItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.loaiCaBindingSource1BindingNavigatorSaveItem.Name = "loaiCaBindingSource1BindingNavigatorSaveItem";
-            this.loaiCaBindingSource1BindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 21);
+            this.loaiCaBindingSource1BindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 22);
             this.loaiCaBindingSource1BindingNavigatorSaveItem.Text = "toolStripButton14";
             this.loaiCaBindingSource1BindingNavigatorSaveItem.Click += new System.EventHandler(this.loaiCaBindingSource1BindingNavigatorSaveItem_Click);
             // 
@@ -1181,12 +1107,12 @@
             this.tableLayoutPanel16.Controls.Add(maLoaiCaLabel, 0, 0);
             this.tableLayoutPanel16.Controls.Add(tenLoaiCaLabel, 0, 1);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 27);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 28);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 2;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(559, 68);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(559, 69);
             this.tableLayoutPanel16.TabIndex = 2;
             // 
             // tenLoaiCaTextEdit1
@@ -1197,7 +1123,7 @@
             this.tenLoaiCaTextEdit1.Name = "tenLoaiCaTextEdit1";
             this.tenLoaiCaTextEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.tenLoaiCaTextEdit1.Properties.Appearance.Options.UseFont = true;
-            this.tenLoaiCaTextEdit1.Size = new System.Drawing.Size(217, 28);
+            this.tenLoaiCaTextEdit1.Size = new System.Drawing.Size(217, 22);
             this.tenLoaiCaTextEdit1.TabIndex = 6;
             // 
             // maLoaiCaTextEdit2
@@ -1208,7 +1134,7 @@
             this.maLoaiCaTextEdit2.Name = "maLoaiCaTextEdit2";
             this.maLoaiCaTextEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.maLoaiCaTextEdit2.Properties.Appearance.Options.UseFont = true;
-            this.maLoaiCaTextEdit2.Size = new System.Drawing.Size(217, 28);
+            this.maLoaiCaTextEdit2.Size = new System.Drawing.Size(217, 22);
             this.maLoaiCaTextEdit2.TabIndex = 4;
             // 
             // nhanVienTableAdapter1
@@ -1251,6 +1177,77 @@
             // loaiCaTableAdapter1
             // 
             this.loaiCaTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridViewComboBoxExColumn15
+            // 
+            this.dataGridViewComboBoxExColumn15.DataPropertyName = "MaNV";
+            this.dataGridViewComboBoxExColumn15.DataSource = this.nhanVienBindingSource1;
+            this.dataGridViewComboBoxExColumn15.DisplayMember = "TenNV";
+            this.dataGridViewComboBoxExColumn15.DropDownHeight = 106;
+            this.dataGridViewComboBoxExColumn15.DropDownWidth = 121;
+            this.dataGridViewComboBoxExColumn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataGridViewComboBoxExColumn15.HeaderText = "Mã Nhân Viên";
+            this.dataGridViewComboBoxExColumn15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridViewComboBoxExColumn15.IntegralHeight = false;
+            this.dataGridViewComboBoxExColumn15.ItemHeight = 17;
+            this.dataGridViewComboBoxExColumn15.MinimumWidth = 6;
+            this.dataGridViewComboBoxExColumn15.Name = "dataGridViewComboBoxExColumn15";
+            this.dataGridViewComboBoxExColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxExColumn15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridViewComboBoxExColumn15.ValueMember = "MaNV";
+            // 
+            // dataGridViewComboBoxExColumn16
+            // 
+            this.dataGridViewComboBoxExColumn16.DataPropertyName = "MaLoaiCa";
+            this.dataGridViewComboBoxExColumn16.DataSource = this.loaiCaBindingSource1;
+            this.dataGridViewComboBoxExColumn16.DisplayMember = "TenLoaiCa";
+            this.dataGridViewComboBoxExColumn16.DropDownHeight = 106;
+            this.dataGridViewComboBoxExColumn16.DropDownWidth = 121;
+            this.dataGridViewComboBoxExColumn16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataGridViewComboBoxExColumn16.HeaderText = "Mã Loại Ca";
+            this.dataGridViewComboBoxExColumn16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridViewComboBoxExColumn16.IntegralHeight = false;
+            this.dataGridViewComboBoxExColumn16.ItemHeight = 17;
+            this.dataGridViewComboBoxExColumn16.MinimumWidth = 6;
+            this.dataGridViewComboBoxExColumn16.Name = "dataGridViewComboBoxExColumn16";
+            this.dataGridViewComboBoxExColumn16.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxExColumn16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridViewComboBoxExColumn16.ValueMember = "MaLoaiCa";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "SoThoiGianLam";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Số Thời Gian Làm";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "NgayLam";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Ngày Làm";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "MaNV";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Mã Nhân Viên";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "TenNV";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Tên Nhân Viên";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "ThoiGianLam";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Thời Gian Làm";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
             // UC_NhanVien_ChamCong
             // 
@@ -1410,9 +1407,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton nhanVienBindingSource1BindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView nhanVienDataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
         private DevExpress.XtraEditors.SpinEdit thoiGianLamSpinEdit1;
         private DevExpress.XtraEditors.TextEdit tenNVTextEdit1;
@@ -1444,10 +1438,6 @@
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
         private System.Windows.Forms.DataGridView chiTietCaLamDataGridView1;
-        private DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn dataGridViewComboBoxExColumn15;
-        private DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn dataGridViewComboBoxExColumn16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.BindingSource chiTietCaLamBindingSource1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private DevExpress.XtraEditors.DateEdit ngayLamDateEdit1;
@@ -1468,5 +1458,12 @@
         private System.Windows.Forms.ToolStripButton toolStripButton17;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
         private System.Windows.Forms.ToolStripButton chiTietCaLamBindingSource1BindingNavigatorSaveItem;
+        private DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn dataGridViewComboBoxExColumn15;
+        private DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn dataGridViewComboBoxExColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
     }
 }

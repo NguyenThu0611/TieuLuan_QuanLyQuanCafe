@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL_DAL">
+      <HintPath>..\BLL_DAL\bin\Debug\BLL_DAL.dll</HintPath>
+    </Reference>
     <Reference Include="DevComponents.Charts.Design, Version=14.1.0.18, Culture=neutral, PublicKeyToken=90f470f34c89ccaf, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Charts, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
     <Reference Include="DevComponents.DotNetBar.Keyboard, Version=14.1.0.18, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
@@ -43,7 +46,15 @@
     <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="System" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
@@ -57,11 +68,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMain.cs">
+    <Compile Include="DanhMucMatHang_DongChai.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DanhMucMatHang_DongChai.Designer.cs">
+      <DependentUpon>DanhMucMatHang_DongChai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucMatHang_NguyenLieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DanhMucMatHang_NguyenLieu.Designer.cs">
+      <DependentUpon>DanhMucMatHang_NguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucMatHang_PhaChe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DanhMucMatHang_PhaChe.Designer.cs">
+      <DependentUpon>DanhMucMatHang_PhaChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="DialogThanhToan.Designer.cs">
+      <DependentUpon>DialogThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoAn_QuanLyQuanCafeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoAn_QuanLyQuanCafeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucMatHang_BoiThuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DanhMucMatHang_BoiThuong.Designer.cs">
+      <DependentUpon>DanhMucMatHang_BoiThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhauHaoPhaChe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhauHaoPhaChe.Designer.cs">
+      <DependentUpon>KhauHaoPhaChe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_GiamGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_GiamGia.Designer.cs">
+      <DependentUpon>UC_GiamGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainBanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainBanHang.Designer.cs">
+      <DependentUpon>MainBanHang.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBanHang.cs">
       <SubType>Form</SubType>
@@ -77,8 +141,50 @@
     <Compile Include="UC_BanHang.Designer.cs">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.cs</DependentUpon>
+    <Compile Include="UC_KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_KhachHang.Designer.cs">
+      <DependentUpon>UC_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ThemKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ThemKhachHang.Designer.cs">
+      <DependentUpon>UC_ThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DanhMucMatHang_DongChai.resx">
+      <DependentUpon>DanhMucMatHang_DongChai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMucMatHang_NguyenLieu.resx">
+      <DependentUpon>DanhMucMatHang_NguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMucMatHang_PhaChe.resx">
+      <DependentUpon>DanhMucMatHang_PhaChe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogThanhToan.resx">
+      <DependentUpon>DialogThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMucMatHang_BoiThuong.resx">
+      <DependentUpon>DanhMucMatHang_BoiThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhauHaoPhaChe.resx">
+      <DependentUpon>KhauHaoPhaChe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_GiamGia.resx">
+      <DependentUpon>UC_GiamGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainBanHang.resx">
+      <DependentUpon>MainBanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBanHang.resx">
       <DependentUpon>frmBanHang.cs</DependentUpon>
@@ -96,6 +202,26 @@
     <EmbeddedResource Include="UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_KhachHang.resx">
+      <DependentUpon>UC_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ThemKhachHang.resx">
+      <DependentUpon>UC_ThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DoAn_QuanLyQuanCafeDataSet.xsc">
+      <DependentUpon>DoAn_QuanLyQuanCafeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DoAn_QuanLyQuanCafeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DoAn_QuanLyQuanCafeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoAn_QuanLyQuanCafeDataSet.xss">
+      <DependentUpon>DoAn_QuanLyQuanCafeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

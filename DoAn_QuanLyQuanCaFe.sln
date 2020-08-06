@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoAn_QuanLyQuanCaFe", "DoAn_QuanLyQuanCaFe\DoAn_QuanLyQuanCaFe.csproj", "{B085F0F7-1119-40B5-ABAC-48B8140E5568}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_DAL", "BLL_DAL\BLL_DAL.csproj", "{218EFA51-C1C7-4699-8CAF-8FE74CB10507}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B085F0F7-1119-40B5-ABAC-48B8140E5568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B085F0F7-1119-40B5-ABAC-48B8140E5568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B085F0F7-1119-40B5-ABAC-48B8140E5568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218EFA51-C1C7-4699-8CAF-8FE74CB10507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218EFA51-C1C7-4699-8CAF-8FE74CB10507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218EFA51-C1C7-4699-8CAF-8FE74CB10507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218EFA51-C1C7-4699-8CAF-8FE74CB10507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -69,17 +69,17 @@ namespace DoAn_QuanLyQuanCaFe
 
 
         #region event truyen du lieu
-        public class Test : EventArgs
-        {
-            private List<DateTime> lsttime;
+        //public class Test : EventArgs
+        //{
+        //    private List<DateTime> lsttime;
 
-            public List<DateTime> Lsttime { get => lsttime; set => lsttime = value; }
+        //    public List<DateTime> Lsttime { get => lsttime; set => lsttime = value; }
 
-            public Test (List<DateTime> lstTime)
-            {
-                this.Lsttime = lsttime;
-            }
-        }
+        //    public Test (List<DateTime> lstTime)
+        //    {
+        //        this.Lsttime = lsttime;
+        //    }
+        //}
         #endregion
     }
 }

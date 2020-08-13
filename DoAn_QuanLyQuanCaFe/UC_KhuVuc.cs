@@ -26,9 +26,17 @@ namespace DoAn_QuanLyQuanCaFe
 
         }
 
-        private void maBanLabel_Click(object sender, EventArgs e)
+        private void UC_KhuVuc_Load(object sender, EventArgs e)
         {
+            this.khuVucTableAdapter.Fill(this.doAn_QuanLyQuanCafeDataSet.KhuVuc);
+            this.banTableAdapter.Fill(this.doAn_QuanLyQuanCafeDataSet.Ban);
+        }
 
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.khuVucBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.doAn_QuanLyQuanCafeDataSet);
         }
     }
 }

@@ -37,12 +37,12 @@
             this.navPhieuQuaTang = new DevComponents.DotNetBar.ButtonItem();
             this.navDanhMuc = new DevComponents.DotNetBar.ButtonItem();
             this.navNhanVien = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
+            this.navKhuVuc = new DevComponents.DotNetBar.ButtonItem();
             this.navNhapHang = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem7 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem4 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem6 = new DevComponents.DotNetBar.ButtonItem();
+            this.navKeToan = new DevComponents.DotNetBar.ButtonItem();
+            this.navQuanLyKho = new DevComponents.DotNetBar.ButtonItem();
+            this.navBaoCao = new DevComponents.DotNetBar.ButtonItem();
+            this.navBaoMatHeThong = new DevComponents.DotNetBar.ButtonItem();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.flChucNang = new System.Windows.Forms.FlowLayoutPanel();
             this.pContent = new DevComponents.DotNetBar.PanelEx();
@@ -62,7 +62,7 @@
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelEx1.Name = "panelEx1";
-            this.panelEx1.Size = new System.Drawing.Size(176, 578);
+            this.panelEx1.Size = new System.Drawing.Size(205, 711);
             this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -85,7 +85,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(171, 578);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(199, 711);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // navigationBar1
@@ -102,16 +102,16 @@
             this.navPhieuQuaTang,
             this.navDanhMuc,
             this.navNhanVien,
-            this.buttonItem1,
+            this.navKhuVuc,
             this.navNhapHang,
-            this.buttonItem7,
-            this.buttonItem4,
-            this.buttonItem5,
-            this.buttonItem6});
-            this.navigationBar1.Location = new System.Drawing.Point(3, 194);
+            this.navKeToan,
+            this.navQuanLyKho,
+            this.navBaoCao,
+            this.navBaoMatHeThong});
+            this.navigationBar1.Location = new System.Drawing.Point(3, 239);
             this.navigationBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.navigationBar1.Name = "navigationBar1";
-            this.navigationBar1.Size = new System.Drawing.Size(165, 378);
+            this.navigationBar1.Size = new System.Drawing.Size(193, 412);
             this.navigationBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.navigationBar1.TabIndex = 0;
             this.navigationBar1.Text = "Khách Hàng";
@@ -128,7 +128,6 @@
             // navKhachHang
             // 
             this.navKhachHang.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.navKhachHang.Checked = true;
             this.navKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("navKhachHang.Image")));
             this.navKhachHang.Name = "navKhachHang";
             this.navKhachHang.OptionGroup = "navBar";
@@ -162,55 +161,64 @@
             this.navNhanVien.Text = "Nhân Viên";
             this.navNhanVien.Click += new System.EventHandler(this.navNhanVien_Click);
             // 
-            // buttonItem1
+            // navKhuVuc
             // 
-            this.buttonItem1.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem1.Checked = true;
-            this.buttonItem1.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem1.Image")));
-            this.buttonItem1.Name = "buttonItem1";
-            this.buttonItem1.OptionGroup = "navBar";
-            this.buttonItem1.Text = "Khu Vực";
+            this.navKhuVuc.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navKhuVuc.Image = ((System.Drawing.Image)(resources.GetObject("navKhuVuc.Image")));
+            this.navKhuVuc.Name = "navKhuVuc";
+            this.navKhuVuc.OptionGroup = "navBar";
+            this.navKhuVuc.Text = "Khu Vực";
+            this.navKhuVuc.Click += new System.EventHandler(this.navKhuVuc_Click);
             // 
             // navNhapHang
             // 
             this.navNhapHang.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navNhapHang.Checked = true;
             this.navNhapHang.Image = ((System.Drawing.Image)(resources.GetObject("navNhapHang.Image")));
             this.navNhapHang.Name = "navNhapHang";
             this.navNhapHang.OptionGroup = "navBar";
             this.navNhapHang.Text = "Nhập Hàng";
             this.navNhapHang.Click += new System.EventHandler(this.navNhapHang_Click);
             // 
-            // buttonItem7
+            // navKeToan
             // 
-            this.buttonItem7.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem7.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem7.Image")));
-            this.buttonItem7.Name = "buttonItem7";
-            this.buttonItem7.OptionGroup = "navBar";
-            this.buttonItem7.Text = "Kế Toán";
+            this.navKeToan.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navKeToan.Checked = true;
+            this.navKeToan.Image = ((System.Drawing.Image)(resources.GetObject("navKeToan.Image")));
+            this.navKeToan.Name = "navKeToan";
+            this.navKeToan.OptionGroup = "navBar";
+            this.navKeToan.Text = "Kế Toán";
+            this.navKeToan.Click += new System.EventHandler(this.navKeToan_Click);
             // 
-            // buttonItem4
+            // navQuanLyKho
             // 
-            this.buttonItem4.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem4.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem4.Image")));
-            this.buttonItem4.Name = "buttonItem4";
-            this.buttonItem4.OptionGroup = "navBar";
-            this.buttonItem4.Text = "Quản Lý Kho";
+            this.navQuanLyKho.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navQuanLyKho.Checked = true;
+            this.navQuanLyKho.Image = ((System.Drawing.Image)(resources.GetObject("navQuanLyKho.Image")));
+            this.navQuanLyKho.Name = "navQuanLyKho";
+            this.navQuanLyKho.OptionGroup = "navBar";
+            this.navQuanLyKho.Text = "Quản Lý Kho";
+            this.navQuanLyKho.Click += new System.EventHandler(this.navQuanLyKho_Click);
             // 
-            // buttonItem5
+            // navBaoCao
             // 
-            this.buttonItem5.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem5.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem5.Image")));
-            this.buttonItem5.Name = "buttonItem5";
-            this.buttonItem5.OptionGroup = "navBar";
-            this.buttonItem5.Text = "Báo Cáo";
+            this.navBaoCao.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navBaoCao.Checked = true;
+            this.navBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("navBaoCao.Image")));
+            this.navBaoCao.Name = "navBaoCao";
+            this.navBaoCao.OptionGroup = "navBar";
+            this.navBaoCao.Text = "Báo Cáo";
+            this.navBaoCao.Click += new System.EventHandler(this.navBaoCao_Click);
             // 
-            // buttonItem6
+            // navBaoMatHeThong
             // 
-            this.buttonItem6.Image = ((System.Drawing.Image)(resources.GetObject("buttonItem6.Image")));
-            this.buttonItem6.ImageFixedSize = new System.Drawing.Size(16, 16);
-            this.buttonItem6.Name = "buttonItem6";
-            this.buttonItem6.OptionGroup = "navBar";
-            this.buttonItem6.Text = "Bảo Mật / Hệ thống";
+            this.navBaoMatHeThong.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.navBaoMatHeThong.Checked = true;
+            this.navBaoMatHeThong.Image = ((System.Drawing.Image)(resources.GetObject("navBaoMatHeThong.Image")));
+            this.navBaoMatHeThong.Name = "navBaoMatHeThong";
+            this.navBaoMatHeThong.OptionGroup = "navBar";
+            this.navBaoMatHeThong.Text = "Bảo Mật / Hệ thống";
+            this.navBaoMatHeThong.Click += new System.EventHandler(this.navBaoMatHeThong_Click);
             // 
             // groupPanel1
             // 
@@ -222,7 +230,7 @@
             this.groupPanel1.Location = new System.Drawing.Point(3, 2);
             this.groupPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(165, 188);
+            this.groupPanel1.Size = new System.Drawing.Size(193, 233);
             // 
             // 
             // 
@@ -262,7 +270,7 @@
             this.flChucNang.Location = new System.Drawing.Point(0, 0);
             this.flChucNang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flChucNang.Name = "flChucNang";
-            this.flChucNang.Size = new System.Drawing.Size(159, 166);
+            this.flChucNang.Size = new System.Drawing.Size(187, 209);
             this.flChucNang.TabIndex = 0;
             // 
             // pContent
@@ -271,10 +279,10 @@
             this.pContent.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.pContent.DisabledBackColor = System.Drawing.Color.Empty;
             this.pContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pContent.Location = new System.Drawing.Point(176, 0);
+            this.pContent.Location = new System.Drawing.Point(205, 0);
             this.pContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pContent.Name = "pContent";
-            this.pContent.Size = new System.Drawing.Size(952, 578);
+            this.pContent.Size = new System.Drawing.Size(1111, 711);
             this.pContent.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.pContent.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.pContent.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -286,9 +294,9 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1128, 578);
+            this.ClientSize = new System.Drawing.Size(1316, 711);
             this.Controls.Add(this.pContent);
             this.Controls.Add(this.panelEx1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -314,15 +322,15 @@
         private DevComponents.DotNetBar.ButtonItem navPhieuQuaTang;
         private DevComponents.DotNetBar.ButtonItem navDanhMuc;
         private DevComponents.DotNetBar.ButtonItem navNhapHang;
-        private DevComponents.DotNetBar.ButtonItem buttonItem7;
-        private DevComponents.DotNetBar.ButtonItem buttonItem4;
-        private DevComponents.DotNetBar.ButtonItem buttonItem5;
-        private DevComponents.DotNetBar.ButtonItem buttonItem6;
+        private DevComponents.DotNetBar.ButtonItem navKeToan;
+        private DevComponents.DotNetBar.ButtonItem navQuanLyKho;
+        private DevComponents.DotNetBar.ButtonItem navBaoCao;
+        private DevComponents.DotNetBar.ButtonItem navBaoMatHeThong;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevComponents.DotNetBar.PanelEx pContent;
         private DevComponents.DotNetBar.ButtonItem navNhanVien;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private System.Windows.Forms.FlowLayoutPanel flChucNang;
-        private DevComponents.DotNetBar.ButtonItem buttonItem1;
+        private DevComponents.DotNetBar.ButtonItem navKhuVuc;
     }
 }

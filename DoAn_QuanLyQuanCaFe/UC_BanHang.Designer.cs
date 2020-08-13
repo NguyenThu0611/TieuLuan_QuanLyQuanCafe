@@ -34,12 +34,13 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.textBoxX4 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.comboBoxEx2 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.cboKhachHang = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxX3 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxX1 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtSoLuong = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.txtMaKhachHang = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtBanHienTai = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.textBoxX5 = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
@@ -49,19 +50,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonX3 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX4 = new DevComponents.DotNetBar.ButtonX();
+            this.btnGiamGia = new DevComponents.DotNetBar.ButtonX();
+            this.btnChuyenBan = new DevComponents.DotNetBar.ButtonX();
             this.buttonX6 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.buttonX8 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX5 = new DevComponents.DotNetBar.ButtonX();
+            this.btnGopBan = new DevComponents.DotNetBar.ButtonX();
             this.buttonX7 = new DevComponents.DotNetBar.ButtonX();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
             this.btnTienMat = new DevComponents.DotNetBar.ButtonX();
             this.buttonX11 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX10 = new DevComponents.DotNetBar.ButtonX();
+            this.btnLuu = new DevComponents.DotNetBar.ButtonX();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
@@ -69,15 +70,15 @@
             this.labelX10 = new DevComponents.DotNetBar.LabelX();
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.labelX12 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxX10 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX11 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX12 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTongTien = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPhuThu = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtThanhTien = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxX13 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX14 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPhanTramGiam = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTienGiam = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxX15 = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX16 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtPhanTramVAT = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtTienVAT = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -108,12 +109,13 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("Tahoma", 10F);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.05933F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.03473F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 691);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1008, 690);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -125,36 +127,38 @@
             this.tableLayoutPanel2.Controls.Add(this.labelX4, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1002, 97);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1002, 99);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.63948F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.36052F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 404F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.94828F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.05172F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 106F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 343F));
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxX1, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBoxX2, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.txtMaKhachHang, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.txtBanHienTai, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.textBoxX5, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.comboBoxEx1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.labelX1, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.labelX2, 2, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(87, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(87, 2);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(912, 91);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(912, 95);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // tableLayoutPanel5
@@ -163,15 +167,16 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.1105F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.8895F));
             this.tableLayoutPanel5.Controls.Add(this.textBoxX4, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.comboBoxEx2, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.cboKhachHang, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(510, 3);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(571, 2);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(399, 39);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(338, 43);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // textBoxX4
@@ -183,56 +188,46 @@
             this.textBoxX4.Border.Class = "TextBoxBorder";
             this.textBoxX4.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX4.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.textBoxX4.Location = new System.Drawing.Point(322, 5);
+            this.textBoxX4.Location = new System.Drawing.Point(273, 7);
+            this.textBoxX4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxX4.Name = "textBoxX4";
             this.textBoxX4.PreventEnterBeep = true;
-            this.textBoxX4.Size = new System.Drawing.Size(74, 28);
+            this.textBoxX4.Size = new System.Drawing.Size(62, 28);
             this.textBoxX4.TabIndex = 0;
             // 
-            // comboBoxEx2
+            // cboKhachHang
             // 
-            this.comboBoxEx2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxEx2.DisplayMember = "Text";
-            this.comboBoxEx2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEx2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.comboBoxEx2.FormattingEnabled = true;
-            this.comboBoxEx2.ItemHeight = 23;
-            this.comboBoxEx2.Location = new System.Drawing.Point(3, 5);
-            this.comboBoxEx2.Name = "comboBoxEx2";
-            this.comboBoxEx2.Size = new System.Drawing.Size(313, 29);
-            this.comboBoxEx2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxEx2.TabIndex = 1;
+            this.cboKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboKhachHang.DisplayMember = "Text";
+            this.cboKhachHang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboKhachHang.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.cboKhachHang.FormattingEnabled = true;
+            this.cboKhachHang.ItemHeight = 23;
+            this.cboKhachHang.Location = new System.Drawing.Point(3, 7);
+            this.cboKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboKhachHang.Name = "cboKhachHang";
+            this.cboKhachHang.Size = new System.Drawing.Size(264, 29);
+            this.cboKhachHang.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cboKhachHang.TabIndex = 1;
             // 
             // tableLayoutPanel4
             // 
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 77.0751F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.9249F));
-            this.tableLayoutPanel4.Controls.Add(this.textBoxX3, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.labelX3, 1, 0);
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.84211F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.15789F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel4.Controls.Add(this.labelX3, 2, 0);
+            this.tableLayoutPanel4.Controls.Add(this.txtSoLuong, 1, 0);
+            this.tableLayoutPanel4.Controls.Add(this.labelX5, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(190, 48);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(192, 49);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(199, 40);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(267, 44);
             this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // textBoxX3
-            // 
-            this.textBoxX3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.textBoxX3.Border.Class = "TextBoxBorder";
-            this.textBoxX3.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX3.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.textBoxX3.Location = new System.Drawing.Point(3, 6);
-            this.textBoxX3.Name = "textBoxX3";
-            this.textBoxX3.PreventEnterBeep = true;
-            this.textBoxX3.Size = new System.Drawing.Size(147, 28);
-            this.textBoxX3.TabIndex = 0;
             // 
             // labelX3
             // 
@@ -243,43 +238,79 @@
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelX3.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelX3.Location = new System.Drawing.Point(156, 3);
+            this.labelX3.Location = new System.Drawing.Point(209, 2);
+            this.labelX3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(40, 34);
+            this.labelX3.Size = new System.Drawing.Size(55, 40);
             this.labelX3.TabIndex = 1;
             this.labelX3.Text = "(Mới)";
             this.labelX3.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            // textBoxX1
+            // txtSoLuong
             // 
-            this.textBoxX1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.textBoxX1.Border.Class = "TextBoxBorder";
-            this.textBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.textBoxX1.Location = new System.Drawing.Point(3, 8);
-            this.textBoxX1.Name = "textBoxX1";
-            this.textBoxX1.PreventEnterBeep = true;
-            this.textBoxX1.Size = new System.Drawing.Size(181, 28);
-            this.textBoxX1.TabIndex = 2;
-            // 
-            // textBoxX2
-            // 
-            this.textBoxX2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
-            this.textBoxX2.Border.Class = "TextBoxBorder";
-            this.textBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.textBoxX2.Location = new System.Drawing.Point(3, 54);
-            this.textBoxX2.Name = "textBoxX2";
-            this.textBoxX2.PreventEnterBeep = true;
-            this.textBoxX2.Size = new System.Drawing.Size(181, 28);
-            this.textBoxX2.TabIndex = 3;
-            this.textBoxX2.Text = "VIP02";
+            this.txtSoLuong.Border.Class = "TextBoxBorder";
+            this.txtSoLuong.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtSoLuong.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtSoLuong.Location = new System.Drawing.Point(79, 8);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.PreventEnterBeep = true;
+            this.txtSoLuong.Size = new System.Drawing.Size(124, 28);
+            this.txtSoLuong.TabIndex = 0;
+            this.txtSoLuong.TextChanged += new System.EventHandler(this.textBoxX3_TextChanged);
+            // 
+            // labelX5
+            // 
+            this.labelX5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelX5.Location = new System.Drawing.Point(3, 10);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(70, 23);
+            this.labelX5.TabIndex = 2;
+            this.labelX5.Text = "Số Lượng";
+            // 
+            // txtMaKhachHang
+            // 
+            this.txtMaKhachHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.txtMaKhachHang.Border.Class = "TextBoxBorder";
+            this.txtMaKhachHang.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtMaKhachHang.Enabled = false;
+            this.txtMaKhachHang.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtMaKhachHang.Location = new System.Drawing.Point(3, 9);
+            this.txtMaKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaKhachHang.Name = "txtMaKhachHang";
+            this.txtMaKhachHang.PreventEnterBeep = true;
+            this.txtMaKhachHang.Size = new System.Drawing.Size(183, 28);
+            this.txtMaKhachHang.TabIndex = 2;
+            // 
+            // txtBanHienTai
+            // 
+            this.txtBanHienTai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.txtBanHienTai.Border.Class = "TextBoxBorder";
+            this.txtBanHienTai.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtBanHienTai.Enabled = false;
+            this.txtBanHienTai.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtBanHienTai.Location = new System.Drawing.Point(3, 57);
+            this.txtBanHienTai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBanHienTai.Name = "txtBanHienTai";
+            this.txtBanHienTai.PreventEnterBeep = true;
+            this.txtBanHienTai.Size = new System.Drawing.Size(183, 28);
+            this.txtBanHienTai.TabIndex = 3;
+            this.txtBanHienTai.Text = "VIP02";
             // 
             // textBoxX5
             // 
@@ -290,10 +321,11 @@
             this.textBoxX5.Border.Class = "TextBoxBorder";
             this.textBoxX5.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.textBoxX5.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.textBoxX5.Location = new System.Drawing.Point(510, 54);
+            this.textBoxX5.Location = new System.Drawing.Point(571, 57);
+            this.textBoxX5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxX5.Name = "textBoxX5";
             this.textBoxX5.PreventEnterBeep = true;
-            this.textBoxX5.Size = new System.Drawing.Size(399, 28);
+            this.textBoxX5.Size = new System.Drawing.Size(338, 28);
             this.textBoxX5.TabIndex = 4;
             // 
             // comboBoxEx1
@@ -304,9 +336,10 @@
             this.comboBoxEx1.Font = new System.Drawing.Font("Tahoma", 10F);
             this.comboBoxEx1.FormattingEnabled = true;
             this.comboBoxEx1.ItemHeight = 23;
-            this.comboBoxEx1.Location = new System.Drawing.Point(190, 8);
+            this.comboBoxEx1.Location = new System.Drawing.Point(192, 9);
+            this.comboBoxEx1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxEx1.Name = "comboBoxEx1";
-            this.comboBoxEx1.Size = new System.Drawing.Size(199, 29);
+            this.comboBoxEx1.Size = new System.Drawing.Size(267, 29);
             this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.comboBoxEx1.TabIndex = 5;
             this.comboBoxEx1.Text = "22/07/2020";
@@ -319,9 +352,10 @@
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelX1.Location = new System.Drawing.Point(395, 11);
+            this.labelX1.Location = new System.Drawing.Point(465, 12);
+            this.labelX1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(109, 23);
+            this.labelX1.Size = new System.Drawing.Size(100, 23);
             this.labelX1.TabIndex = 6;
             this.labelX1.Text = "Khách Hàng";
             // 
@@ -333,9 +367,10 @@
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelX2.Location = new System.Drawing.Point(395, 56);
+            this.labelX2.Location = new System.Drawing.Point(465, 59);
+            this.labelX2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(109, 23);
+            this.labelX2.Size = new System.Drawing.Size(100, 23);
             this.labelX2.TabIndex = 7;
             this.labelX2.Text = "Số Điện Thoại";
             // 
@@ -348,9 +383,10 @@
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(3, 15);
+            this.labelX4.Location = new System.Drawing.Point(3, 16);
+            this.labelX4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(78, 67);
+            this.labelX4.Size = new System.Drawing.Size(78, 66);
             this.labelX4.TabIndex = 1;
             // 
             // tableLayoutPanel10
@@ -364,11 +400,12 @@
             this.tableLayoutPanel10.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel10.Controls.Add(this.panel3, 3, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 444);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(3, 443);
+            this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(1002, 244);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(1002, 245);
             this.tableLayoutPanel10.TabIndex = 3;
             // 
             // panel1
@@ -376,9 +413,10 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.tableLayoutPanel11);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(244, 238);
+            this.panel1.Size = new System.Drawing.Size(244, 241);
             this.panel1.TabIndex = 2;
             // 
             // tableLayoutPanel11
@@ -389,11 +427,12 @@
             this.tableLayoutPanel11.Controls.Add(this.buttonX7, 0, 1);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 2;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.42586F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.57414F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(242, 236);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(242, 239);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
             // tableLayoutPanel12
@@ -401,47 +440,52 @@
             this.tableLayoutPanel12.ColumnCount = 2;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Controls.Add(this.buttonX3, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.buttonX4, 1, 1);
+            this.tableLayoutPanel12.Controls.Add(this.btnGiamGia, 0, 0);
+            this.tableLayoutPanel12.Controls.Add(this.btnChuyenBan, 1, 1);
             this.tableLayoutPanel12.Controls.Add(this.buttonX6, 1, 2);
             this.tableLayoutPanel12.Controls.Add(this.buttonX1, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.buttonX8, 0, 2);
-            this.tableLayoutPanel12.Controls.Add(this.buttonX5, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.btnGopBan, 0, 1);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 3;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.42017F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.57983F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(236, 174);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(236, 178);
             this.tableLayoutPanel12.TabIndex = 0;
             // 
-            // buttonX3
+            // btnGiamGia
             // 
-            this.buttonX3.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonX3.Image = ((System.Drawing.Image)(resources.GetObject("buttonX3.Image")));
-            this.buttonX3.Location = new System.Drawing.Point(3, 3);
-            this.buttonX3.Name = "buttonX3";
-            this.buttonX3.Size = new System.Drawing.Size(112, 50);
-            this.buttonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX3.TabIndex = 6;
-            this.buttonX3.Text = "Giảm Giá";
+            this.btnGiamGia.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnGiamGia.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnGiamGia.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGiamGia.Image = ((System.Drawing.Image)(resources.GetObject("btnGiamGia.Image")));
+            this.btnGiamGia.Location = new System.Drawing.Point(3, 2);
+            this.btnGiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGiamGia.Name = "btnGiamGia";
+            this.btnGiamGia.Size = new System.Drawing.Size(112, 54);
+            this.btnGiamGia.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnGiamGia.TabIndex = 6;
+            this.btnGiamGia.Text = "Giảm Giá";
+            this.btnGiamGia.Click += new System.EventHandler(this.btnGiamGia_Click);
             // 
-            // buttonX4
+            // btnChuyenBan
             // 
-            this.buttonX4.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX4.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonX4.Image = ((System.Drawing.Image)(resources.GetObject("buttonX4.Image")));
-            this.buttonX4.Location = new System.Drawing.Point(121, 59);
-            this.buttonX4.Name = "buttonX4";
-            this.buttonX4.Size = new System.Drawing.Size(112, 49);
-            this.buttonX4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX4.TabIndex = 5;
-            this.buttonX4.Text = "Chuyển Bàn";
+            this.btnChuyenBan.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnChuyenBan.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnChuyenBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnChuyenBan.Image = ((System.Drawing.Image)(resources.GetObject("btnChuyenBan.Image")));
+            this.btnChuyenBan.Location = new System.Drawing.Point(121, 60);
+            this.btnChuyenBan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChuyenBan.Name = "btnChuyenBan";
+            this.btnChuyenBan.Size = new System.Drawing.Size(112, 53);
+            this.btnChuyenBan.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnChuyenBan.TabIndex = 5;
+            this.btnChuyenBan.Text = "Chuyển Bàn";
+            this.btnChuyenBan.Click += new System.EventHandler(this.btnChuyenBan_Click);
             // 
             // buttonX6
             // 
@@ -449,9 +493,10 @@
             this.buttonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonX6.Image = ((System.Drawing.Image)(resources.GetObject("buttonX6.Image")));
-            this.buttonX6.Location = new System.Drawing.Point(121, 114);
+            this.buttonX6.Location = new System.Drawing.Point(121, 117);
+            this.buttonX6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonX6.Name = "buttonX6";
-            this.buttonX6.Size = new System.Drawing.Size(112, 57);
+            this.buttonX6.Size = new System.Drawing.Size(112, 59);
             this.buttonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX6.TabIndex = 5;
             this.buttonX6.Text = "In";
@@ -462,12 +507,14 @@
             this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonX1.Image = ((System.Drawing.Image)(resources.GetObject("buttonX1.Image")));
-            this.buttonX1.Location = new System.Drawing.Point(121, 3);
+            this.buttonX1.Location = new System.Drawing.Point(121, 2);
+            this.buttonX1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(112, 50);
+            this.buttonX1.Size = new System.Drawing.Size(112, 54);
             this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX1.TabIndex = 5;
             this.buttonX1.Text = "Bỏ Giảm";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // buttonX8
             // 
@@ -475,25 +522,28 @@
             this.buttonX8.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonX8.Image = ((System.Drawing.Image)(resources.GetObject("buttonX8.Image")));
-            this.buttonX8.Location = new System.Drawing.Point(3, 114);
+            this.buttonX8.Location = new System.Drawing.Point(3, 117);
+            this.buttonX8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonX8.Name = "buttonX8";
-            this.buttonX8.Size = new System.Drawing.Size(112, 57);
+            this.buttonX8.Size = new System.Drawing.Size(112, 59);
             this.buttonX8.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX8.TabIndex = 4;
             this.buttonX8.Text = "Hủy";
+            this.buttonX8.Click += new System.EventHandler(this.buttonX8_Click);
             // 
-            // buttonX5
+            // btnGopBan
             // 
-            this.buttonX5.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX5.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonX5.Image = ((System.Drawing.Image)(resources.GetObject("buttonX5.Image")));
-            this.buttonX5.Location = new System.Drawing.Point(3, 59);
-            this.buttonX5.Name = "buttonX5";
-            this.buttonX5.Size = new System.Drawing.Size(112, 49);
-            this.buttonX5.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX5.TabIndex = 6;
-            this.buttonX5.Text = "Gộp Bàn";
+            this.btnGopBan.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnGopBan.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnGopBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnGopBan.Image = ((System.Drawing.Image)(resources.GetObject("btnGopBan.Image")));
+            this.btnGopBan.Location = new System.Drawing.Point(3, 60);
+            this.btnGopBan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGopBan.Name = "btnGopBan";
+            this.btnGopBan.Size = new System.Drawing.Size(112, 53);
+            this.btnGopBan.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnGopBan.TabIndex = 6;
+            this.btnGopBan.Text = "Gộp Bàn";
             // 
             // buttonX7
             // 
@@ -501,9 +551,10 @@
             this.buttonX7.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.buttonX7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonX7.Image = ((System.Drawing.Image)(resources.GetObject("buttonX7.Image")));
-            this.buttonX7.Location = new System.Drawing.Point(3, 183);
+            this.buttonX7.Location = new System.Drawing.Point(3, 184);
+            this.buttonX7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonX7.Name = "buttonX7";
-            this.buttonX7.Size = new System.Drawing.Size(236, 50);
+            this.buttonX7.Size = new System.Drawing.Size(236, 53);
             this.buttonX7.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX7.TabIndex = 6;
             this.buttonX7.Text = "Ghi Chú / PV";
@@ -513,9 +564,10 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.tableLayoutPanel13);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(253, 3);
+            this.panel2.Location = new System.Drawing.Point(253, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(244, 238);
+            this.panel2.Size = new System.Drawing.Size(244, 241);
             this.panel2.TabIndex = 4;
             // 
             // tableLayoutPanel13
@@ -523,14 +575,15 @@
             this.tableLayoutPanel13.ColumnCount = 1;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.Controls.Add(this.tableLayoutPanel14, 0, 0);
-            this.tableLayoutPanel13.Controls.Add(this.buttonX10, 0, 1);
+            this.tableLayoutPanel13.Controls.Add(this.btnLuu, 0, 1);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel13.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(242, 236);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(242, 239);
             this.tableLayoutPanel13.TabIndex = 1;
             // 
             // tableLayoutPanel14
@@ -541,11 +594,12 @@
             this.tableLayoutPanel14.Controls.Add(this.btnTienMat, 1, 0);
             this.tableLayoutPanel14.Controls.Add(this.buttonX11, 0, 0);
             this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel14.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel14.Name = "tableLayoutPanel14";
             this.tableLayoutPanel14.RowCount = 1;
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(236, 103);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(236, 108);
             this.tableLayoutPanel14.TabIndex = 0;
             // 
             // btnTienMat
@@ -555,9 +609,10 @@
             this.btnTienMat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTienMat.Image = ((System.Drawing.Image)(resources.GetObject("btnTienMat.Image")));
             this.btnTienMat.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnTienMat.Location = new System.Drawing.Point(121, 3);
+            this.btnTienMat.Location = new System.Drawing.Point(121, 2);
+            this.btnTienMat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTienMat.Name = "btnTienMat";
-            this.btnTienMat.Size = new System.Drawing.Size(112, 97);
+            this.btnTienMat.Size = new System.Drawing.Size(112, 104);
             this.btnTienMat.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnTienMat.TabIndex = 5;
             this.btnTienMat.Text = "Tiền Mặt";
@@ -570,35 +625,40 @@
             this.buttonX11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonX11.Image = ((System.Drawing.Image)(resources.GetObject("buttonX11.Image")));
             this.buttonX11.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonX11.Location = new System.Drawing.Point(3, 3);
+            this.buttonX11.Location = new System.Drawing.Point(3, 2);
+            this.buttonX11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonX11.Name = "buttonX11";
-            this.buttonX11.Size = new System.Drawing.Size(112, 97);
+            this.buttonX11.Size = new System.Drawing.Size(112, 104);
             this.buttonX11.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonX11.TabIndex = 6;
             this.buttonX11.Text = "Thẻ";
+            this.buttonX11.Click += new System.EventHandler(this.buttonX11_Click);
             // 
-            // buttonX10
+            // btnLuu
             // 
-            this.buttonX10.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX10.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonX10.Image = ((System.Drawing.Image)(resources.GetObject("buttonX10.Image")));
-            this.buttonX10.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.buttonX10.Location = new System.Drawing.Point(3, 112);
-            this.buttonX10.Name = "buttonX10";
-            this.buttonX10.Size = new System.Drawing.Size(236, 121);
-            this.buttonX10.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX10.TabIndex = 4;
-            this.buttonX10.Text = "Lưu";
+            this.btnLuu.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnLuu.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnLuu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
+            this.btnLuu.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnLuu.Location = new System.Drawing.Point(3, 114);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(236, 123);
+            this.btnLuu.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnLuu.TabIndex = 4;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.tableLayoutPanel15);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(703, 3);
+            this.panel3.Location = new System.Drawing.Point(703, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(296, 238);
+            this.panel3.Size = new System.Drawing.Size(296, 241);
             this.panel3.TabIndex = 4;
             // 
             // tableLayoutPanel15
@@ -611,13 +671,14 @@
             this.tableLayoutPanel15.Controls.Add(this.labelX10, 0, 2);
             this.tableLayoutPanel15.Controls.Add(this.labelX11, 0, 3);
             this.tableLayoutPanel15.Controls.Add(this.labelX12, 0, 4);
-            this.tableLayoutPanel15.Controls.Add(this.textBoxX10, 1, 0);
-            this.tableLayoutPanel15.Controls.Add(this.textBoxX11, 1, 2);
-            this.tableLayoutPanel15.Controls.Add(this.textBoxX12, 1, 4);
+            this.tableLayoutPanel15.Controls.Add(this.txtTongTien, 1, 0);
+            this.tableLayoutPanel15.Controls.Add(this.txtPhuThu, 1, 2);
+            this.tableLayoutPanel15.Controls.Add(this.txtThanhTien, 1, 4);
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 1, 1);
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel17, 1, 3);
             this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 5;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -626,7 +687,7 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(294, 236);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(294, 239);
             this.tableLayoutPanel15.TabIndex = 5;
             // 
             // labelX8
@@ -636,9 +697,10 @@
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX8.Location = new System.Drawing.Point(3, 3);
+            this.labelX8.Location = new System.Drawing.Point(3, 2);
+            this.labelX8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(59, 41);
+            this.labelX8.Size = new System.Drawing.Size(59, 43);
             this.labelX8.TabIndex = 0;
             this.labelX8.Text = "Tổng Cộng";
             // 
@@ -649,9 +711,10 @@
             // 
             this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX9.Location = new System.Drawing.Point(3, 50);
+            this.labelX9.Location = new System.Drawing.Point(3, 49);
+            this.labelX9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX9.Name = "labelX9";
-            this.labelX9.Size = new System.Drawing.Size(59, 41);
+            this.labelX9.Size = new System.Drawing.Size(59, 43);
             this.labelX9.TabIndex = 1;
             this.labelX9.Text = "Giảm Giá";
             // 
@@ -662,9 +725,10 @@
             // 
             this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX10.Location = new System.Drawing.Point(3, 97);
+            this.labelX10.Location = new System.Drawing.Point(3, 96);
+            this.labelX10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX10.Name = "labelX10";
-            this.labelX10.Size = new System.Drawing.Size(59, 41);
+            this.labelX10.Size = new System.Drawing.Size(59, 43);
             this.labelX10.TabIndex = 2;
             this.labelX10.Text = "Phụ Thu";
             // 
@@ -675,9 +739,10 @@
             // 
             this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX11.Location = new System.Drawing.Point(3, 144);
+            this.labelX11.Location = new System.Drawing.Point(3, 143);
+            this.labelX11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(59, 41);
+            this.labelX11.Size = new System.Drawing.Size(59, 43);
             this.labelX11.TabIndex = 3;
             this.labelX11.Text = "VAT";
             // 
@@ -688,177 +753,198 @@
             // 
             this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelX12.Location = new System.Drawing.Point(3, 191);
+            this.labelX12.Location = new System.Drawing.Point(3, 190);
+            this.labelX12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelX12.Name = "labelX12";
-            this.labelX12.Size = new System.Drawing.Size(59, 42);
+            this.labelX12.Size = new System.Drawing.Size(59, 47);
             this.labelX12.TabIndex = 4;
             this.labelX12.Text = "Thành Tiền";
             // 
-            // textBoxX10
+            // txtTongTien
             // 
-            this.textBoxX10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.textBoxX10.Border.Class = "TextBoxBorder";
-            this.textBoxX10.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.textBoxX10.ForeColor = System.Drawing.Color.Red;
-            this.textBoxX10.Location = new System.Drawing.Point(68, 7);
-            this.textBoxX10.Name = "textBoxX10";
-            this.textBoxX10.PreventEnterBeep = true;
-            this.textBoxX10.Size = new System.Drawing.Size(223, 32);
-            this.textBoxX10.TabIndex = 5;
-            this.textBoxX10.Text = "0";
-            this.textBoxX10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxX11
-            // 
-            this.textBoxX11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTongTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
-            this.textBoxX11.Border.Class = "TextBoxBorder";
-            this.textBoxX11.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.textBoxX11.ForeColor = System.Drawing.Color.Red;
-            this.textBoxX11.Location = new System.Drawing.Point(68, 101);
-            this.textBoxX11.Name = "textBoxX11";
-            this.textBoxX11.PreventEnterBeep = true;
-            this.textBoxX11.Size = new System.Drawing.Size(223, 32);
-            this.textBoxX11.TabIndex = 6;
-            this.textBoxX11.Text = "0";
-            this.textBoxX11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTongTien.Border.Class = "TextBoxBorder";
+            this.txtTongTien.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTongTien.Enabled = false;
+            this.txtTongTien.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtTongTien.ForeColor = System.Drawing.Color.Red;
+            this.txtTongTien.Location = new System.Drawing.Point(68, 7);
+            this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.PreventEnterBeep = true;
+            this.txtTongTien.Size = new System.Drawing.Size(223, 32);
+            this.txtTongTien.TabIndex = 5;
+            this.txtTongTien.Text = "0";
+            this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBoxX12
+            // txtPhuThu
             // 
-            this.textBoxX12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhuThu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
-            this.textBoxX12.Border.Class = "TextBoxBorder";
-            this.textBoxX12.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.textBoxX12.ForeColor = System.Drawing.Color.Red;
-            this.textBoxX12.Location = new System.Drawing.Point(68, 196);
-            this.textBoxX12.Name = "textBoxX12";
-            this.textBoxX12.PreventEnterBeep = true;
-            this.textBoxX12.Size = new System.Drawing.Size(223, 32);
-            this.textBoxX12.TabIndex = 7;
-            this.textBoxX12.Text = "0";
-            this.textBoxX12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPhuThu.Border.Class = "TextBoxBorder";
+            this.txtPhuThu.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtPhuThu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtPhuThu.ForeColor = System.Drawing.Color.Red;
+            this.txtPhuThu.Location = new System.Drawing.Point(68, 101);
+            this.txtPhuThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhuThu.Name = "txtPhuThu";
+            this.txtPhuThu.PreventEnterBeep = true;
+            this.txtPhuThu.Size = new System.Drawing.Size(223, 32);
+            this.txtPhuThu.TabIndex = 6;
+            this.txtPhuThu.Text = "0";
+            this.txtPhuThu.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPhuThu.TextChanged += new System.EventHandler(this.txtPhuThu_TextChanged);
+            this.txtPhuThu.Leave += new System.EventHandler(this.txtPhuThu_Leave);
+            // 
+            // txtThanhTien
+            // 
+            this.txtThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.txtThanhTien.Border.Class = "TextBoxBorder";
+            this.txtThanhTien.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtThanhTien.Enabled = false;
+            this.txtThanhTien.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtThanhTien.ForeColor = System.Drawing.Color.Red;
+            this.txtThanhTien.Location = new System.Drawing.Point(68, 197);
+            this.txtThanhTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtThanhTien.Name = "txtThanhTien";
+            this.txtThanhTien.PreventEnterBeep = true;
+            this.txtThanhTien.Size = new System.Drawing.Size(223, 32);
+            this.txtThanhTien.TabIndex = 7;
+            this.txtThanhTien.Text = "0";
+            this.txtThanhTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tableLayoutPanel16
             // 
             this.tableLayoutPanel16.ColumnCount = 2;
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.85417F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.14584F));
-            this.tableLayoutPanel16.Controls.Add(this.textBoxX13, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.textBoxX14, 1, 0);
+            this.tableLayoutPanel16.Controls.Add(this.txtPhanTramGiam, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.txtTienGiam, 1, 0);
             this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(68, 50);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(68, 49);
+            this.tableLayoutPanel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel16.Name = "tableLayoutPanel16";
             this.tableLayoutPanel16.RowCount = 1;
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(223, 41);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(223, 43);
             this.tableLayoutPanel16.TabIndex = 8;
             // 
-            // textBoxX13
+            // txtPhanTramGiam
             // 
-            this.textBoxX13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.textBoxX13.Border.Class = "TextBoxBorder";
-            this.textBoxX13.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.textBoxX13.ForeColor = System.Drawing.Color.Green;
-            this.textBoxX13.Location = new System.Drawing.Point(3, 4);
-            this.textBoxX13.Name = "textBoxX13";
-            this.textBoxX13.PreventEnterBeep = true;
-            this.textBoxX13.Size = new System.Drawing.Size(69, 32);
-            this.textBoxX13.TabIndex = 0;
-            this.textBoxX13.Text = "0";
-            this.textBoxX13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxX14
-            // 
-            this.textBoxX14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhanTramGiam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
-            this.textBoxX14.Border.Class = "TextBoxBorder";
-            this.textBoxX14.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.textBoxX14.ForeColor = System.Drawing.Color.Green;
-            this.textBoxX14.Location = new System.Drawing.Point(78, 4);
-            this.textBoxX14.Name = "textBoxX14";
-            this.textBoxX14.PreventEnterBeep = true;
-            this.textBoxX14.Size = new System.Drawing.Size(142, 32);
-            this.textBoxX14.TabIndex = 1;
-            this.textBoxX14.Text = "0";
-            this.textBoxX14.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPhanTramGiam.Border.Class = "TextBoxBorder";
+            this.txtPhanTramGiam.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtPhanTramGiam.Enabled = false;
+            this.txtPhanTramGiam.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtPhanTramGiam.ForeColor = System.Drawing.Color.Green;
+            this.txtPhanTramGiam.Location = new System.Drawing.Point(3, 5);
+            this.txtPhanTramGiam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhanTramGiam.Name = "txtPhanTramGiam";
+            this.txtPhanTramGiam.PreventEnterBeep = true;
+            this.txtPhanTramGiam.Size = new System.Drawing.Size(69, 32);
+            this.txtPhanTramGiam.TabIndex = 0;
+            this.txtPhanTramGiam.Text = "0";
+            this.txtPhanTramGiam.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtTienGiam
+            // 
+            this.txtTienGiam.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.txtTienGiam.Border.Class = "TextBoxBorder";
+            this.txtTienGiam.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTienGiam.Enabled = false;
+            this.txtTienGiam.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtTienGiam.ForeColor = System.Drawing.Color.Green;
+            this.txtTienGiam.Location = new System.Drawing.Point(78, 5);
+            this.txtTienGiam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTienGiam.Name = "txtTienGiam";
+            this.txtTienGiam.PreventEnterBeep = true;
+            this.txtTienGiam.Size = new System.Drawing.Size(142, 32);
+            this.txtTienGiam.TabIndex = 1;
+            this.txtTienGiam.Text = "0";
+            this.txtTienGiam.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTienGiam.TextChanged += new System.EventHandler(this.txtTienGiam_TextChanged);
             // 
             // tableLayoutPanel17
             // 
             this.tableLayoutPanel17.ColumnCount = 2;
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.89583F));
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.10416F));
-            this.tableLayoutPanel17.Controls.Add(this.textBoxX15, 0, 0);
-            this.tableLayoutPanel17.Controls.Add(this.textBoxX16, 1, 0);
+            this.tableLayoutPanel17.Controls.Add(this.txtPhanTramVAT, 0, 0);
+            this.tableLayoutPanel17.Controls.Add(this.txtTienVAT, 1, 0);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(68, 144);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(68, 143);
+            this.tableLayoutPanel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 1;
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(223, 41);
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(223, 43);
             this.tableLayoutPanel17.TabIndex = 9;
             // 
-            // textBoxX15
+            // txtPhanTramVAT
             // 
-            this.textBoxX15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.textBoxX15.Border.Class = "TextBoxBorder";
-            this.textBoxX15.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.textBoxX15.ForeColor = System.Drawing.Color.Red;
-            this.textBoxX15.Location = new System.Drawing.Point(3, 4);
-            this.textBoxX15.Name = "textBoxX15";
-            this.textBoxX15.PreventEnterBeep = true;
-            this.textBoxX15.Size = new System.Drawing.Size(71, 32);
-            this.textBoxX15.TabIndex = 0;
-            this.textBoxX15.Text = "0";
-            this.textBoxX15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBoxX16
-            // 
-            this.textBoxX16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPhanTramVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             // 
             // 
             // 
-            this.textBoxX16.Border.Class = "TextBoxBorder";
-            this.textBoxX16.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.textBoxX16.ForeColor = System.Drawing.Color.Red;
-            this.textBoxX16.Location = new System.Drawing.Point(80, 4);
-            this.textBoxX16.Name = "textBoxX16";
-            this.textBoxX16.PreventEnterBeep = true;
-            this.textBoxX16.Size = new System.Drawing.Size(140, 32);
-            this.textBoxX16.TabIndex = 1;
-            this.textBoxX16.Text = "0";
-            this.textBoxX16.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPhanTramVAT.Border.Class = "TextBoxBorder";
+            this.txtPhanTramVAT.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtPhanTramVAT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtPhanTramVAT.ForeColor = System.Drawing.Color.Red;
+            this.txtPhanTramVAT.Location = new System.Drawing.Point(3, 5);
+            this.txtPhanTramVAT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhanTramVAT.Name = "txtPhanTramVAT";
+            this.txtPhanTramVAT.PreventEnterBeep = true;
+            this.txtPhanTramVAT.Size = new System.Drawing.Size(71, 32);
+            this.txtPhanTramVAT.TabIndex = 0;
+            this.txtPhanTramVAT.Text = "5";
+            this.txtPhanTramVAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPhanTramVAT.Leave += new System.EventHandler(this.txtPhuThu_Leave);
+            // 
+            // txtTienVAT
+            // 
+            this.txtTienVAT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.txtTienVAT.Border.Class = "TextBoxBorder";
+            this.txtTienVAT.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtTienVAT.Enabled = false;
+            this.txtTienVAT.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtTienVAT.ForeColor = System.Drawing.Color.Red;
+            this.txtTienVAT.Location = new System.Drawing.Point(80, 5);
+            this.txtTienVAT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTienVAT.Name = "txtTienVAT";
+            this.txtTienVAT.PreventEnterBeep = true;
+            this.txtTienVAT.Size = new System.Drawing.Size(140, 32);
+            this.txtTienVAT.TabIndex = 1;
+            this.txtTienVAT.Text = "0";
+            this.txtTienVAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 106);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 105);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 332);
+            this.dataGridView1.Size = new System.Drawing.Size(1002, 334);
             this.dataGridView1.TabIndex = 4;
             // 
             // UC_BanHang
@@ -866,8 +952,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_BanHang";
-            this.Size = new System.Drawing.Size(1008, 691);
+            this.Size = new System.Drawing.Size(1008, 690);
+            this.Load += new System.EventHandler(this.UC_BanHang_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -898,17 +986,17 @@
         private System.Windows.Forms.Panel panel2;
         private DevComponents.DotNetBar.ButtonX btnTienMat;
         private DevComponents.DotNetBar.ButtonX buttonX11;
-        private DevComponents.DotNetBar.ButtonX buttonX10;
+        private DevComponents.DotNetBar.ButtonX btnLuu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX4;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx2;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cboKhachHang;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX3;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtSoLuong;
         private DevComponents.DotNetBar.LabelX labelX3;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX1;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtMaKhachHang;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtBanHienTai;
         private DevComponents.DotNetBar.Controls.TextBoxX textBoxX5;
         private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
         private DevComponents.DotNetBar.LabelX labelX1;
@@ -920,26 +1008,27 @@
         private DevComponents.DotNetBar.LabelX labelX10;
         private DevComponents.DotNetBar.LabelX labelX11;
         private DevComponents.DotNetBar.LabelX labelX12;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX10;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX11;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX12;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTongTien;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtPhuThu;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtThanhTien;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
-        private DevComponents.DotNetBar.ButtonX buttonX3;
-        private DevComponents.DotNetBar.ButtonX buttonX4;
+        private DevComponents.DotNetBar.ButtonX btnGiamGia;
+        private DevComponents.DotNetBar.ButtonX btnChuyenBan;
         private DevComponents.DotNetBar.ButtonX buttonX6;
         private DevComponents.DotNetBar.ButtonX buttonX1;
         private DevComponents.DotNetBar.ButtonX buttonX8;
-        private DevComponents.DotNetBar.ButtonX buttonX5;
+        private DevComponents.DotNetBar.ButtonX btnGopBan;
         private DevComponents.DotNetBar.ButtonX buttonX7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX13;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX14;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtPhanTramGiam;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTienGiam;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX15;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX16;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtPhanTramVAT;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtTienVAT;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private DevComponents.DotNetBar.LabelX labelX5;
     }
 }

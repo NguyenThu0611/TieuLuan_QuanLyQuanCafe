@@ -20,6 +20,19 @@ namespace DoAn_QuanLyQuanCaFe
             InitializeComponent();
 
         }
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Bạn muốn thoát phải không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.Cancel)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                frmLogin login = new frmLogin();
+                login.Show();
+                this.Dispose();
+            }
+        }
 
         public void TaoListButtonChucNang(string[] lst, Control control)
         {
@@ -88,19 +101,6 @@ namespace DoAn_QuanLyQuanCaFe
             pContent.Controls.Add(new UC_KhachHang() { Dock = DockStyle.Fill });
         }
 
-        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (MessageBox.Show("Bạn muốn thoát phải không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.Cancel)
-            {
-                e.Cancel = true;
-            }
-            else
-            { frmLogin login = new frmLogin();
-                login.Show();
-                this.Dispose();
-            }
-        }
-
         private void navPhieuQuaTang_Click(object sender, EventArgs e)
         {
             pContent.Controls.Clear();
@@ -121,9 +121,36 @@ namespace DoAn_QuanLyQuanCaFe
             TaoListButtonChucNang(lstChucnang, flChucNang);
         }
 
+        private void navKhuVuc_Click(object sender, EventArgs e)
+        {
+            flChucNang.Controls.Clear();
+            pContent.Controls.Clear();
+            pContent.Controls.Add(new UC_KhuVuc() { Dock = DockStyle.Fill });
+        }
+
         private void navNhapHang_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo");
+        }
+
+        private void navKeToan_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo");
+        }
+
+        private void navQuanLyKho_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo");
+        }
+
+        private void navBaoCao_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo");
+        }
+
+        private void navBaoMatHeThong_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tính năng đang cập nhật", "Thông báo");
         }
     }
 }

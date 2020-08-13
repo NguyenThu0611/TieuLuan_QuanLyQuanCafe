@@ -72,10 +72,22 @@
     <Compile Include="Dialog_BaoCaoNhanVien_ThoiGian.Designer.cs">
       <DependentUpon>Dialog_BaoCaoNhanVien_ThoiGian.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialog_ChuyenBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog_ChuyenBan.Designer.cs">
+      <DependentUpon>Dialog_ChuyenBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoAn_QuanLyQuanCafeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DoAn_QuanLyQuanCafeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiamGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiamGia.Designer.cs">
+      <DependentUpon>frmGiamGia.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_DanhMucMatHang_DongChai.cs">
       <SubType>UserControl</SubType>
@@ -131,12 +143,6 @@
     <Compile Include="MainBanHang.Designer.cs">
       <DependentUpon>MainBanHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBanHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmBanHang.Designer.cs">
-      <DependentUpon>frmBanHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UC_BanHang.cs">
@@ -184,6 +190,12 @@
     <EmbeddedResource Include="Dialog_BaoCaoNhanVien_ThoiGian.resx">
       <DependentUpon>Dialog_BaoCaoNhanVien_ThoiGian.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dialog_ChuyenBan.resx">
+      <DependentUpon>Dialog_ChuyenBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiamGia.resx">
+      <DependentUpon>frmGiamGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_DanhMucMatHang_DongChai.resx">
       <DependentUpon>UC_DanhMucMatHang_DongChai.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,9 +222,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainBanHang.resx">
       <DependentUpon>MainBanHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmBanHang.resx">
-      <DependentUpon>frmBanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

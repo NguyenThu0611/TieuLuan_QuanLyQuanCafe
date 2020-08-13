@@ -44,9 +44,13 @@
             this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
             this.chiTietCaLamDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewComboBoxExColumn15 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
             this.nhanVienBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.doAn_QuanLyQuanCafeDataSet1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSet();
+            this.dataGridViewComboBoxExColumn16 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
             this.loaiCaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiTietCaLamBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.ngayLamDateEdit1 = new DevExpress.XtraEditors.DateEdit();
@@ -83,6 +87,9 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.nhanVienBindingSource1BindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nhanVienDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.thoiGianLamSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
             this.tenNVTextEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -112,13 +119,6 @@
             this.tableAdapterManager1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.TableAdapterManager();
             this.chiTietCaLamTableAdapter1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.ChiTietCaLamTableAdapter();
             this.loaiCaTableAdapter1 = new DoAn_QuanLyQuanCaFe.DoAn_QuanLyQuanCafeDataSetTableAdapters.LoaiCaTableAdapter();
-            this.dataGridViewComboBoxExColumn15 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
-            this.dataGridViewComboBoxExColumn16 = new DevComponents.DotNetBar.Controls.DataGridViewComboBoxExColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             thoiGianLamLabel = new System.Windows.Forms.Label();
             tenNVLabel = new System.Windows.Forms.Label();
             maNVLabel = new System.Windows.Forms.Label();
@@ -372,6 +372,24 @@
             this.chiTietCaLamDataGridView1.Size = new System.Drawing.Size(558, 466);
             this.chiTietCaLamDataGridView1.TabIndex = 0;
             // 
+            // dataGridViewComboBoxExColumn15
+            // 
+            this.dataGridViewComboBoxExColumn15.DataPropertyName = "MaNV";
+            this.dataGridViewComboBoxExColumn15.DataSource = this.nhanVienBindingSource1;
+            this.dataGridViewComboBoxExColumn15.DisplayMember = "TenNV";
+            this.dataGridViewComboBoxExColumn15.DropDownHeight = 106;
+            this.dataGridViewComboBoxExColumn15.DropDownWidth = 121;
+            this.dataGridViewComboBoxExColumn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataGridViewComboBoxExColumn15.HeaderText = "Mã Nhân Viên";
+            this.dataGridViewComboBoxExColumn15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridViewComboBoxExColumn15.IntegralHeight = false;
+            this.dataGridViewComboBoxExColumn15.ItemHeight = 17;
+            this.dataGridViewComboBoxExColumn15.MinimumWidth = 6;
+            this.dataGridViewComboBoxExColumn15.Name = "dataGridViewComboBoxExColumn15";
+            this.dataGridViewComboBoxExColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxExColumn15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridViewComboBoxExColumn15.ValueMember = "MaNV";
+            // 
             // nhanVienBindingSource1
             // 
             this.nhanVienBindingSource1.DataMember = "NhanVien";
@@ -382,10 +400,42 @@
             this.doAn_QuanLyQuanCafeDataSet1.DataSetName = "DoAn_QuanLyQuanCafeDataSet";
             this.doAn_QuanLyQuanCafeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // dataGridViewComboBoxExColumn16
+            // 
+            this.dataGridViewComboBoxExColumn16.DataPropertyName = "MaLoaiCa";
+            this.dataGridViewComboBoxExColumn16.DataSource = this.loaiCaBindingSource1;
+            this.dataGridViewComboBoxExColumn16.DisplayMember = "TenLoaiCa";
+            this.dataGridViewComboBoxExColumn16.DropDownHeight = 106;
+            this.dataGridViewComboBoxExColumn16.DropDownWidth = 121;
+            this.dataGridViewComboBoxExColumn16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataGridViewComboBoxExColumn16.HeaderText = "Mã Loại Ca";
+            this.dataGridViewComboBoxExColumn16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dataGridViewComboBoxExColumn16.IntegralHeight = false;
+            this.dataGridViewComboBoxExColumn16.ItemHeight = 17;
+            this.dataGridViewComboBoxExColumn16.MinimumWidth = 6;
+            this.dataGridViewComboBoxExColumn16.Name = "dataGridViewComboBoxExColumn16";
+            this.dataGridViewComboBoxExColumn16.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxExColumn16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.dataGridViewComboBoxExColumn16.ValueMember = "MaLoaiCa";
+            // 
             // loaiCaBindingSource1
             // 
             this.loaiCaBindingSource1.DataMember = "LoaiCa";
             this.loaiCaBindingSource1.DataSource = this.doAn_QuanLyQuanCafeDataSet1;
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "SoThoiGianLam";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Số Thời Gian Làm";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "NgayLam";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Ngày Làm";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             // 
             // chiTietCaLamBindingSource1
             // 
@@ -422,7 +472,7 @@
             this.ngayLamDateEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ngayLamDateEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.chiTietCaLamBindingSource1, "NgayLam", true));
             this.ngayLamDateEdit1.EditValue = null;
-            this.ngayLamDateEdit1.Location = new System.Drawing.Point(170, 128);
+            this.ngayLamDateEdit1.Location = new System.Drawing.Point(170, 129);
             this.ngayLamDateEdit1.Name = "ngayLamDateEdit1";
             this.ngayLamDateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngayLamDateEdit1.Properties.Appearance.Options.UseFont = true;
@@ -442,7 +492,7 @@
             0,
             0,
             0});
-            this.soThoiGianLamSpinEdit1.Location = new System.Drawing.Point(170, 87);
+            this.soThoiGianLamSpinEdit1.Location = new System.Drawing.Point(170, 88);
             this.soThoiGianLamSpinEdit1.Name = "soThoiGianLamSpinEdit1";
             this.soThoiGianLamSpinEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.soThoiGianLamSpinEdit1.Properties.Appearance.Options.UseFont = true;
@@ -455,7 +505,7 @@
             // 
             this.maLoaiCaTextEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.maLoaiCaTextEdit3.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.chiTietCaLamBindingSource1, "MaLoaiCa", true));
-            this.maLoaiCaTextEdit3.Location = new System.Drawing.Point(170, 47);
+            this.maLoaiCaTextEdit3.Location = new System.Drawing.Point(170, 48);
             this.maLoaiCaTextEdit3.Name = "maLoaiCaTextEdit3";
             this.maLoaiCaTextEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maLoaiCaTextEdit3.Properties.Appearance.Options.UseFont = true;
@@ -466,7 +516,7 @@
             // 
             this.maNVTextEdit3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.maNVTextEdit3.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.chiTietCaLamBindingSource1, "MaNV", true));
-            this.maNVTextEdit3.Location = new System.Drawing.Point(170, 7);
+            this.maNVTextEdit3.Location = new System.Drawing.Point(170, 8);
             this.maNVTextEdit3.Name = "maNVTextEdit3";
             this.maNVTextEdit3.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maNVTextEdit3.Properties.Appearance.Options.UseFont = true;
@@ -557,8 +607,9 @@
             // 
             this.toolStripTextBox3.AccessibleName = "Position";
             this.toolStripTextBox3.AutoSize = false;
+            this.toolStripTextBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.toolStripTextBox3.Name = "toolStripTextBox3";
-            this.toolStripTextBox3.Size = new System.Drawing.Size(50, 27);
+            this.toolStripTextBox3.Size = new System.Drawing.Size(40, 22);
             this.toolStripTextBox3.Text = "0";
             this.toolStripTextBox3.ToolTipText = "Current position";
             // 
@@ -758,6 +809,7 @@
             // 
             this.toolStripTextBox1.AccessibleName = "Position";
             this.toolStripTextBox1.AutoSize = false;
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(50, 27);
             this.toolStripTextBox1.Text = "0";
@@ -818,6 +870,27 @@
             this.nhanVienDataGridView1.Size = new System.Drawing.Size(559, 229);
             this.nhanVienDataGridView1.TabIndex = 0;
             // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "MaNV";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Mã Nhân Viên";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "TenNV";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Tên Nhân Viên";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "ThoiGianLam";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Thời Gian Làm";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
             // tableLayoutPanel15
             // 
             this.tableLayoutPanel15.ColumnCount = 3;
@@ -849,7 +922,7 @@
             0,
             0,
             0});
-            this.thoiGianLamSpinEdit1.Location = new System.Drawing.Point(170, 79);
+            this.thoiGianLamSpinEdit1.Location = new System.Drawing.Point(170, 80);
             this.thoiGianLamSpinEdit1.Name = "thoiGianLamSpinEdit1";
             this.thoiGianLamSpinEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.thoiGianLamSpinEdit1.Properties.Appearance.Options.UseFont = true;
@@ -862,7 +935,7 @@
             // 
             this.tenNVTextEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tenNVTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nhanVienBindingSource1, "TenNV", true));
-            this.tenNVTextEdit1.Location = new System.Drawing.Point(170, 41);
+            this.tenNVTextEdit1.Location = new System.Drawing.Point(170, 42);
             this.tenNVTextEdit1.Name = "tenNVTextEdit1";
             this.tenNVTextEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tenNVTextEdit1.Properties.Appearance.Options.UseFont = true;
@@ -873,7 +946,7 @@
             // 
             this.maNVTextEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.maNVTextEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.nhanVienBindingSource1, "MaNV", true));
-            this.maNVTextEdit2.Location = new System.Drawing.Point(170, 5);
+            this.maNVTextEdit2.Location = new System.Drawing.Point(170, 6);
             this.maNVTextEdit2.Name = "maNVTextEdit2";
             this.maNVTextEdit2.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maNVTextEdit2.Properties.Appearance.Options.UseFont = true;
@@ -973,6 +1046,7 @@
             // loaiCaBindingSource1BindingNavigator
             // 
             this.loaiCaBindingSource1BindingNavigator.AddNewItem = this.toolStripButton12;
+            this.loaiCaBindingSource1BindingNavigator.BindingSource = this.loaiCaBindingSource1;
             this.loaiCaBindingSource1BindingNavigator.CountItem = this.toolStripLabel2;
             this.loaiCaBindingSource1BindingNavigator.DeleteItem = this.toolStripButton13;
             this.loaiCaBindingSource1BindingNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1053,6 +1127,7 @@
             // 
             this.toolStripTextBox2.AccessibleName = "Position";
             this.toolStripTextBox2.AutoSize = false;
+            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox2.Name = "toolStripTextBox2";
             this.toolStripTextBox2.Size = new System.Drawing.Size(50, 27);
             this.toolStripTextBox2.Text = "0";
@@ -1119,7 +1194,7 @@
             // 
             this.tenLoaiCaTextEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tenLoaiCaTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.loaiCaBindingSource1, "TenLoaiCa", true));
-            this.tenLoaiCaTextEdit1.Location = new System.Drawing.Point(170, 37);
+            this.tenLoaiCaTextEdit1.Location = new System.Drawing.Point(170, 40);
             this.tenLoaiCaTextEdit1.Name = "tenLoaiCaTextEdit1";
             this.tenLoaiCaTextEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.tenLoaiCaTextEdit1.Properties.Appearance.Options.UseFont = true;
@@ -1130,7 +1205,7 @@
             // 
             this.maLoaiCaTextEdit2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.maLoaiCaTextEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.loaiCaBindingSource1, "MaLoaiCa", true));
-            this.maLoaiCaTextEdit2.Location = new System.Drawing.Point(170, 3);
+            this.maLoaiCaTextEdit2.Location = new System.Drawing.Point(170, 6);
             this.maLoaiCaTextEdit2.Name = "maLoaiCaTextEdit2";
             this.maLoaiCaTextEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.maLoaiCaTextEdit2.Properties.Appearance.Options.UseFont = true;
@@ -1177,77 +1252,6 @@
             // loaiCaTableAdapter1
             // 
             this.loaiCaTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataGridViewComboBoxExColumn15
-            // 
-            this.dataGridViewComboBoxExColumn15.DataPropertyName = "MaNV";
-            this.dataGridViewComboBoxExColumn15.DataSource = this.nhanVienBindingSource1;
-            this.dataGridViewComboBoxExColumn15.DisplayMember = "TenNV";
-            this.dataGridViewComboBoxExColumn15.DropDownHeight = 106;
-            this.dataGridViewComboBoxExColumn15.DropDownWidth = 121;
-            this.dataGridViewComboBoxExColumn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataGridViewComboBoxExColumn15.HeaderText = "Mã Nhân Viên";
-            this.dataGridViewComboBoxExColumn15.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridViewComboBoxExColumn15.IntegralHeight = false;
-            this.dataGridViewComboBoxExColumn15.ItemHeight = 17;
-            this.dataGridViewComboBoxExColumn15.MinimumWidth = 6;
-            this.dataGridViewComboBoxExColumn15.Name = "dataGridViewComboBoxExColumn15";
-            this.dataGridViewComboBoxExColumn15.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxExColumn15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dataGridViewComboBoxExColumn15.ValueMember = "MaNV";
-            // 
-            // dataGridViewComboBoxExColumn16
-            // 
-            this.dataGridViewComboBoxExColumn16.DataPropertyName = "MaLoaiCa";
-            this.dataGridViewComboBoxExColumn16.DataSource = this.loaiCaBindingSource1;
-            this.dataGridViewComboBoxExColumn16.DisplayMember = "TenLoaiCa";
-            this.dataGridViewComboBoxExColumn16.DropDownHeight = 106;
-            this.dataGridViewComboBoxExColumn16.DropDownWidth = 121;
-            this.dataGridViewComboBoxExColumn16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataGridViewComboBoxExColumn16.HeaderText = "Mã Loại Ca";
-            this.dataGridViewComboBoxExColumn16.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dataGridViewComboBoxExColumn16.IntegralHeight = false;
-            this.dataGridViewComboBoxExColumn16.ItemHeight = 17;
-            this.dataGridViewComboBoxExColumn16.MinimumWidth = 6;
-            this.dataGridViewComboBoxExColumn16.Name = "dataGridViewComboBoxExColumn16";
-            this.dataGridViewComboBoxExColumn16.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewComboBoxExColumn16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dataGridViewComboBoxExColumn16.ValueMember = "MaLoaiCa";
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.DataPropertyName = "SoThoiGianLam";
-            this.dataGridViewTextBoxColumn17.HeaderText = "Số Thời Gian Làm";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "NgayLam";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Ngày Làm";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "MaNV";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Mã Nhân Viên";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "TenNV";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Tên Nhân Viên";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "ThoiGianLam";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Thời Gian Làm";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
             // UC_NhanVien_ChamCong
             // 
